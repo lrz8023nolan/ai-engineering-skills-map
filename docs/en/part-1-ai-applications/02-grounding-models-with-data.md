@@ -44,9 +44,9 @@ The deciding question is **whether the content is the same every time**. A fixed
 
 | Generation | Method | Character | Representative work |
 |---|---|---|---|
-| **Sparse** | Term statistics (BM25 and similar) | Fast, interpretable, strong on exact matching; blind to paraphrase | Robertson & Zaragoza, BM25 (2009) |
-| **Dense** | Encode query and documents as vectors, compare by cosine similarity | Captures meaning; handles synonyms and vague phrasing | DPR (Karpukhin et al., [arXiv:2004.04906](https://arxiv.org/abs/2004.04906)) |
-| **Hybrid** | Retrieve with both, then fuse | Exact matching and semantics together; the current default | HybridRAG and similar |
+| **Sparse** | Term statistics (BM25 and similar) | Fast, interpretable, strong on exact matching; blind to paraphrase | [Robertson & Zaragoza, BM25（2009）](https://dl.acm.org/doi/10.1561/1500000019) |
+| **Dense** | Encode query and documents as vectors, compare by cosine similarity | Captures meaning; handles synonyms and vague phrasing | [DPR（Karpukhin et al., arXiv:2004.04906](https://arxiv.org/abs/2004.04906)） |
+| **Hybrid** | Retrieve with both, then fuse | Exact matching and semantics together; the current default | [HybridRAG](https://arxiv.org/html/2408.04948v1) and similar |
 
 Worth keeping the rough magnitude from the DPR paper: using dense representations alone, top-20 passage retrieval accuracy improved by **9–19 percentage points** over a strong Lucene-BM25 baseline.
 
@@ -105,7 +105,7 @@ When the model answers poorly in some domain, work through this order:
 
 This is the most consistent finding in the field: **if retrieval does not bring the relevant material back, no amount of generator strength will produce the right answer.**
 
-The original RAG paper (Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*, [arXiv:2005.11401](https://arxiv.org/abs/2005.11401), NeurIPS 2020) established exactly this two-memory paradigm: knowledge splits into a parametric part (pretrained weights) and a non-parametric part (a retrievable external index), and the latter can be updated at any time without retraining. That design addresses three problems at once — knowledge that cannot be updated, thin coverage of long-tail knowledge, and answers that cannot be traced to a source.
+The original RAG paper ([Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*, arXiv:2005.11401, NeurIPS 2020](https://arxiv.org/abs/2005.11401)) established exactly this two-memory paradigm: knowledge splits into a parametric part (pretrained weights) and a non-parametric part (a retrievable external index), and the latter can be updated at any time without retraining. That design addresses three problems at once — knowledge that cannot be updated, thin coverage of long-tail knowledge, and answers that cannot be traced to a source.
 
 One design choice in the paper is easy to miss: the retriever and the generator were **trained jointly**, not optimised separately. That points at a principle still true today: **the goal of retrieval is not "find documents semantically similar to this question" but "find the passages the generator actually needs."** Those are not always the same set.
 
@@ -125,7 +125,7 @@ In practice chunks usually also need metadata attached (source, title, section p
 
 As context windows grow, it is tempting to conclude that you can simply put the whole knowledge base in the prompt. RETRO offers a useful counter-datapoint:
 
-> Borgeaud et al., *Improving Language Models by Retrieving from Trillions of Tokens*, [arXiv:2112.04426](https://arxiv.org/abs/2112.04426), NeurIPS 2022
+> [Borgeaud et al., *Improving Language Models by Retrieving from Trillions of Tokens*, arXiv:2112.04426, NeurIPS 2022](https://arxiv.org/abs/2112.04426)
 
 By conditioning an autoregressive language model on documents retrieved from a two-trillion-token corpus, this work matched GPT-3 and Jurassic-1 on the Pile benchmark with roughly **1/25 of their parameters**. The value of retrieval is therefore not only "added knowledge" but **reaching comparable performance with a much smaller model** — a structural cost advantage that a larger context window does not reproduce.
 
@@ -137,13 +137,13 @@ Vector retrieval exposes its fundamental limit here: it retrieves **independent 
 
 GraphRAG answers by building a knowledge graph of entities and relations, then doing community detection and hierarchical summarisation:
 
-> Edge et al., *From Local to Global: A Graph RAG Approach to Query-Focused Summarization*, [arXiv:2404.16130](https://arxiv.org/abs/2404.16130), Microsoft Research, 2024
+> [Edge et al., *From Local to Global: A Graph RAG Approach to Query-Focused Summarization*, arXiv:2404.16130, Microsoft Research，2024](https://arxiv.org/abs/2404.16130)
 
 The paper reports roughly **30–70%** improvement in answer quality over naive RAG on global questions. But the cost has to be read alongside it: index construction requires many LLM calls to extract entities and relations, making it substantially more expensive than a vector index, and document updates often force a rebuild of the graph. **This is not "a better RAG" — it is an expensive supplement aimed at one class of query.**
 
 ### 4.5 Retrieval can succeed and the answer still be wrong
 
-Getting the relevant material back into the context is no guarantee the model uses it well. The "lost in the middle" effect from manual 1.1 applies directly: the same passage performs best at the very start or very end of the context and degrades significantly in the middle; in the extreme, being given 20–30 documents performed **worse than being given none** (Liu et al., [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)).
+Getting the relevant material back into the context is no guarantee the model uses it well. The "lost in the middle" effect from manual 1.1 applies directly: the same passage performs best at the very start or very end of the context and degrades significantly in the middle; in the extreme, being given 20–30 documents performed **worse than being given none** ([Liu et al., arXiv:2307.03172](https://arxiv.org/abs/2307.03172)).
 
 The implication for retrieval design is direct: **more recall is not better**. Twenty documents of uneven quality may well be worse than three well-chosen ones. Reducing distractors and placing the most important material at the edges beats raising top-k.
 
@@ -151,7 +151,7 @@ The implication for retrieval design is direct: **more recall is not better**. T
 
 A counter-intuitive but important finding: **retrieving for every question is harmful.** For some questions the model already knows the answer, and the retrieved content is pure noise — capable of pulling the model off a correct answer.
 
-Self-RAG (Asai et al., [arXiv:2310.11511](https://arxiv.org/abs/2310.11511)) trains the model to emit reflection tokens, letting it judge four things for itself: whether retrieval is needed at all, whether the retrieved documents are relevant, whether the generated content is supported by them, and whether the answer is useful. CRAG (Yan et al., [arXiv:2401.15884](https://arxiv.org/abs/2401.15884)) addresses the other pain point — what to do when retrieval quality is poor — with a lightweight retrieval evaluator that selects different strategies by quality tier, including degrading to a web search.
+[Self-RAG（Asai et al., arXiv:2310.11511](https://arxiv.org/abs/2310.11511)） trains the model to emit reflection tokens, letting it judge four things for itself: whether retrieval is needed at all, whether the retrieved documents are relevant, whether the generated content is supported by them, and whether the answer is useful. [CRAG（Yan et al., arXiv:2401.15884](https://arxiv.org/abs/2401.15884)） addresses the other pain point — what to do when retrieval quality is poor — with a lightweight retrieval evaluator that selects different strategies by quality tier, including degrading to a web search.
 
 The shared lesson: **retrieval should be a stage that is allowed to fail, and that can tell when it has failed** — not a fixed first stop in the pipeline.
 
@@ -164,7 +164,7 @@ This connects directly to manual 1.4. A RAG system can fail in two completely di
 | **Retrieval** | Hit rate, MRR, Recall@K | Was the relevant material brought back? |
 | **Generation** | Faithfulness, answer relevance, context precision/recall | Was the retrieved material used correctly? |
 
-Gao et al.'s survey (*Retrieval-Augmented Generation for Large Language Models: A Survey*, [arXiv:2312.10997](https://arxiv.org/abs/2312.10997)) groups the architectural evolution into three generations — naive, advanced and modular RAG — and is the standard reference for this separation.
+Gao et al.'s survey (*[Retrieval-Augmented Generation for Large Language Models: A Survey*, arXiv:2312.10997](https://arxiv.org/abs/2312.10997)) groups the architectural evolution into three generations — naive, advanced and modular RAG — and is the standard reference for this separation.
 
 ## 5. Capability checkpoints
 
