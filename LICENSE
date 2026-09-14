@@ -1,32 +1,111 @@
-# License
+# Licensing
 
-## Original content of this repository
+This repository contains **two categories of material** with different legal
+status. Both parts below apply, and they must be read together.
 
-All original material authored for this repository — including the written
-summaries, explanations, glossaries, structure and code — is licensed under the
-**Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+---
 
-You are free to share and adapt this material for any purpose, provided you give
-appropriate credit and indicate if changes were made.
+## 1. Original content — CC BY-NC-SA 4.0
 
-- License deed: https://creativecommons.org/licenses/by/4.0/
-- Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+All material originally authored for this repository is licensed under the
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License (CC BY-NC-SA 4.0)**.
 
-## Third-party material (IMPORTANT)
+This covers, in particular:
 
-This repository is an independent, unofficial study resource. It is **not**
-affiliated with, endorsed by, or sponsored by Andrew Ng or DeepLearning.AI.
+- the manuals in `docs/en/` and `docs/zh/` — every explanation, table, worked
+  example and capability checklist;
+- the glossary in `docs/GLOSSARY.md`, including the bilingual terminology
+  decisions recorded in it;
+- the protocol specification in `docs/PROTOCOL.md`, `README.md` and
+  `README.zh-CN.md`;
+- the selection, arrangement and structure of the material as a whole.
 
-The following material is **NOT** covered by the CC BY 4.0 license above and
-remains the property of its respective owners:
+- License deed: https://creativecommons.org/licenses/by-nc-sa/4.0/
+- Full legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
-- *The AI Engineering Skills Map* and the associated letters, published by
-  DeepLearning.AI (The Batch), are © DeepLearning.AI. Links to the original
-  letters are provided in [`docs/MAP.md`](docs/MAP.md). This repository
-  summarises and briefly quotes that material for study and commentary purposes;
-  it does not reproduce it in full.
-- Academic papers and third-party documentation referenced throughout the
-  repository remain under their own respective licenses.
+### What you may do
 
-If you are a rights holder and believe any content here exceeds fair use or
-quotation, please open an issue and it will be amended or removed.
+Subject to the three conditions below, you may copy, redistribute, translate,
+adapt and build upon this material in any medium or format, for any
+**non-commercial** purpose — including study, teaching, research and internal
+evaluation.
+
+### Conditions
+
+1. **Attribution (BY).** You must credit the author, link to this repository and
+   link to the licence. You must state whether you made changes. You may not
+   suggest that the author endorses you or your use, and you may not present a
+   derivative as the author's original work.
+2. **NonCommercial (NC).** You may not use the material for commercial advantage
+   or monetary compensation. This includes selling it, placing it behind a
+   paywall, or bundling it into a paid product or service. No commercial rights
+   are granted here.
+3. **ShareAlike (SA).** If you translate, adapt or otherwise build upon the
+   material, you must license your contribution under this same licence, or one
+   that Creative Commons has listed as compatible. You may not relicense a
+   derivative under different, additional or more restrictive terms.
+
+### Commercial licensing
+
+Commercial use is **not** granted above, but is available separately. If you
+would like to use this material commercially — in a product, a paid course, a
+consulting engagement, or corporate training — open an issue in this repository
+or contact the author to discuss a licence.
+
+### Version note
+
+Every commit of this repository created **before** the commit that introduced
+this licence was published under CC BY 4.0. Creative Commons licences are
+irrevocable, so any copy obtained while those terms applied remains usable under
+them. This licence applies to all subsequent versions and to all new material.
+
+---
+
+## 2. Third-party material — NOT covered by the licence above
+
+The licence in section 1 applies **only** to material originally authored for
+this repository. It does not apply to any third-party material, which remains
+the property of its respective owners.
+
+**Source letters.** *The AI Engineering Skills Map* and the letters it is drawn
+from, published by DeepLearning.AI, are © DeepLearning.AI. This repository
+paraphrases them, quotes at most one or two sentences per letter, and links to
+each original letter. It does not reproduce them in full, in English or in
+translation. Every quotation is attributed in place and the letters are listed
+in [`docs/MAP.md`](docs/MAP.md). **No licence over that material is granted
+here, and no rights in it are claimed.**
+
+**Academic papers, official documentation and practitioner articles.** Every
+work cited in this repository remains under its own licence. Where such a work is
+briefly quoted, the quotation serves commentary and study, and does not affect
+the status of the underlying work.
+
+If you reuse any part of this repository, separating the original content from
+the third-party material inside it is your responsibility.
+
+---
+
+## 3. Not affiliated
+
+This repository is an independent, unofficial study resource. It is not
+affiliated with, endorsed by, or sponsored by Andrew Ng, DeepLearning.AI, or any
+of the authors or organisations cited. The names of those parties are used for
+attribution and identification only, and nothing here may be presented as their
+official material.
+
+## 4. No warranty
+
+The material is provided as is, without warranty of any kind. Nothing in this
+repository is professional advice.
+
+## 5. Contributions
+
+By opening a pull request you agree that your contribution is licensed under
+CC BY-NC-SA 4.0, on the same terms as the rest of the original content.
+
+## 6. Rights holders
+
+If you hold rights in any material here and believe its inclusion exceeds fair
+use or the limits described above, please open an issue. It will be amended or
+removed promptly.

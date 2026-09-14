@@ -68,8 +68,20 @@ Work in progress. See [`docs/MAP.md`](docs/MAP.md) for per-sub-skill completion 
 
 Issues and pull requests are welcome — especially corrections to sources, or notes where a term is translated imprecisely. Accuracy of sourcing matters more here than volume.
 
+## Using this material
+
+In plain language. The binding terms are in [`LICENSE`](LICENSE).
+
+**You can** read, copy, translate, quote with attribution, fork and adapt this material for **non-commercial** purposes — your own study, teaching, research, or internal evaluation. If you publish a translation or a modified version, it has to carry the same licence and credit this repository.
+
+**You cannot** sell it, put it behind a paywall, bundle it into a commercial product or paid service, or relicense a derivative under more restrictive terms. Nor can you present it as official material from Andrew Ng or DeepLearning.AI — it is not.
+
+**Commercial use** is available separately. Open an issue if you want to discuss it.
+
+One thing to keep in mind if you reuse this: the repository holds two kinds of material. The manuals are the author's original work and carry the licence above. The sentences quoted from the source letters belong to DeepLearning.AI and are **not** covered by this repository's licence — they are attributed in place, and their appearing here does not make them yours to reuse.
+
 ## Attribution and license
 
 This is an **independent, unofficial** study resource. It is not affiliated with, endorsed by, or sponsored by Andrew Ng or DeepLearning.AI.
 
-*The AI Engineering Skills Map* and the associated letters are © DeepLearning.AI. This repository summarises and briefly quotes them for study purposes and links to each original letter; it does not reproduce them in full. All original material written for this repository is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [`LICENSE`](LICENSE) for the full breakdown.
+*The AI Engineering Skills Map* and the associated letters are © DeepLearning.AI. This repository paraphrases and briefly quotes them for study purposes and links to each original letter; it does not reproduce them in full. All original material written for this repository is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [`LICENSE`](LICENSE) for the full breakdown.

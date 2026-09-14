@@ -88,6 +88,7 @@ The source letters are © DeepLearning.AI. This repository is unofficial and mus
 - Paraphrase everything else.
 - Never reproduce a letter in full, in either language, including as a translation. Translation is not a defence.
 - Never imply endorsement by, or affiliation with, Andrew Ng or DeepLearning.AI.
+- Original prose written for this repository is licensed CC BY-NC-SA 4.0 (see `LICENSE`). Quoted third-party text is excluded from that licence and keeps its own attribution, so it can never be relicensed along with the rest of the repository.
 
 ### 5.4 Uncertainty
 State the strength of a claim. If something is a reasonable inference, say "likely" or "in practice". If the evidence is limited to one setting, say so.
