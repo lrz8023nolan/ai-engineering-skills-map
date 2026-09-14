@@ -331,6 +331,71 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | data minimisation | 数据最小化 | 中文 |
 | index | 索引 | 中文 |
 
+### Architecture 架构
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| architecture | 架构 | 中文 |
+| module / modularity | 模块 / 模块化 | 中文 |
+| information hiding | 信息隐藏 | 中文 |
+| decomposition | 拆分 | 中文 |
+| Conway's Law | 康威定律 | 中文 |
+| distributed monolith | 分布式单体 | 中文 |
+| architecture decision record (ADR) | 架构决策记录 | 中文。首次出现给全称，其后可用 ADR |
+| fallacies of distributed computing | 分布式计算的谬误 | 中文 |
+| reversible / irreversible | 可逆的 / 不可逆的 | 中文。指架构决策能否事后调整 |
+| technical debt | 技术债 | 中文 |
+| consistency | 一致性 | 中文。在架构与数据语境下均用「一致性」 |
+
+### Reliability and security 可靠性与安全
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| shift left | 安全左移 | 中文。首次出现可括注英文 |
+| threat modelling | 威胁建模 | 中文 |
+| coverage | 覆盖率 | 中文。指测试覆盖率 |
+| mutation testing | 变异测试 | 中文 |
+| fault injection | 故障注入 | 中文 |
+| chaos engineering | 混沌工程 | 中文 |
+| circuit breaker | 熔断器 | 中文 |
+| backpressure | 背压 | 中文 |
+| backoff / jitter | 退避 / 抖动 | 中文 |
+| rate limiting | 速率限制 | 中文 |
+| graceful degradation | 优雅降级 | 中文 |
+| harvest / yield | — | **保留英文**。首次出现须解释：harvest 指返回的数据占应有数据的比例，yield 指被成功响应的请求比例 |
+| supply chain | 供应链 | 中文 |
+| SBOM (software bill of materials) | 软件物料清单 | 中文。首次出现给全称，其后可用 SBOM |
+| SLSA | — | **保留原文**。框架名，不译 |
+| provenance | 来源证明 | 中文 |
+| artefact signing | 制品签名 | 中文 |
+| SAST / DAST | — | **保留英文**。静态/动态分析缩略，中文无通用对应 |
+| CVE | — | **保留英文**。缩略已通用 |
+| least privilege | 最小权限 | 中文 |
+
+### Delivery and operations 交付与运维
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| deployment | 部署 | 中文 |
+| release strategy | 发布策略 | 中文 |
+| blue-green deployment | 蓝绿部署 | 中文 |
+| load balancing | 负载均衡 | 中文 |
+| consistent hashing | 一致性哈希 | 中文 |
+| health check | 健康检查 | 中文 |
+| graceful shutdown | 优雅关闭 | 中文 |
+| horizontal scaling | 水平扩展 | 中文 |
+| autoscaling | 自动扩缩容 | 中文 |
+| replication lag | 复制延迟 | 中文 |
+| error budget | 错误预算 | 中文 |
+| SLI / SLO / SLA | — | **保留英文**。缩略已通用 |
+| MTTR (mean time to restore) | — | **保留英文**。首次出现可括注中文「平均恢复时间」 |
+| toil | — | **保留英文**。首次出现须解释：手工、重复、可自动化但尚未自动化的运维工作 |
+| blameless postmortem | 无责复盘 | 中文 |
+| DORA metrics | — | **保留英文**。含四个指标的名称，整体保留 |
+| trunk-based development | 主干开发 | 中文 |
+| lockfile | 锁文件 | 中文 |
+| dependency maintenance | 依赖维护 | 中文 |
+
 ---
 
 ## Part 3 — Using coding agents 使用编程 Agent
@@ -410,6 +475,11 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `CDN` / `ORM` / `ACID` / `CAP` / `PKCE` / `RPC` | 缩略已通用 |
 | `REST` / `GraphQL` | 架构风格与技术名 |
 | `expand-contract` | 迁移模式名，中文描述冗长 |
+| `SAST` / `DAST` | 分析类型缩写，中文无通用对应 |
+| `CVE` / `SBOM` / `MTTR` | 缩略已通用 |
+| `SLSA` / `DORA metrics` | 框架与指标集的名称 |
+| `harvest` / `yield` | 论文中的专有定义，中译易失真 |
+| `toil` | 中文译名（苦役／杂务）尚未达成共识 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
 | `go-to-market` | 缩略 GTM 已通用 |

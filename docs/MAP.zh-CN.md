@@ -47,9 +47,11 @@
 |---|---|---|---|
 | 2.1 | 全栈应用构建（Building full-stack applications） | **已完成** | [中文](zh/part-2-software-fundamentals/01-全栈应用构建.md) · [EN](en/part-2-software-fundamentals/01-building-full-stack-applications.md) |
 | 2.2 | 数据管理（Managing data） | **已完成** | [中文](zh/part-2-software-fundamentals/02-数据管理.md) · [EN](en/part-2-software-fundamentals/02-managing-data.md) |
-| 2.3 | 系统架构设计（Designing system architectures） | 待推进 | — |
-| 2.4 | 安全与可靠性（Making systems secure and reliable） | 待推进 | — |
-| 2.5 | 规模化与生产运维（Scaling and operating in production） | 待推进 | — |
+| 2.3 | 系统架构设计（Designing system architectures） | **已完成** | [中文](zh/part-2-software-fundamentals/03-系统架构设计.md) · [EN](en/part-2-software-fundamentals/03-designing-system-architectures.md) |
+| 2.4 | 安全与可靠性（Making systems secure and reliable） | **已完成** | [中文](zh/part-2-software-fundamentals/04-安全与可靠性.md) · [EN](en/part-2-software-fundamentals/04-making-systems-secure-and-reliable.md) |
+| 2.5 | 规模化与生产运维（Scaling and operating in production） | **已完成** | [中文](zh/part-2-software-fundamentals/05-规模化与生产运维.md) · [EN](en/part-2-software-fundamentals/05-scaling-and-operating-in-production.md) |
+
+**Part 2 已完成——5 个子技能全部完成，中英双语齐备。**
 
 ## Part 3 — 使用编程 Agent
 

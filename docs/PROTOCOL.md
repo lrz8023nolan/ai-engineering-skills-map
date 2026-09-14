@@ -53,9 +53,9 @@ Every manual has exactly these six sections, in this order.
 
 ### 4.5 Capability checkpoints
 **Purpose:** make it self-testable. This is what turns a set of articles into a protocol.
-**Include:** 5–8 statements, each beginning "I can…", each verifiable by producing something (an explanation, a design decision, a list). Every checkpoint must be answerable from §4.3 or §4.4.
+**Include:** 5–10 statements, each beginning "I can…", each verifiable by producing something (an explanation, a design decision, a list). Every checkpoint must be answerable from §4.3 or §4.4.
 **Exclude:** vague items ("understand X", "be familiar with Y"). If you cannot tell whether you have met it, rewrite it.
-**Length:** 5–8 items.
+**Length:** 5–10 items. Enumerative sub-skills (much of Part 2) naturally land at the upper end. Needing more than 10 is a signal that the sub-skill is too broad to sit in one manual — split it rather than extend the list.
 
 ### 4.6 Sources
 **Purpose:** auditability.
@@ -131,7 +131,7 @@ Examples:
 A manual is complete when all of the following hold:
 
 - [ ] All six sections present, in order, in both languages
-- [ ] 5–8 capability checkpoints, each verifiable
+- [ ] 5–10 capability checkpoints, each verifiable
 - [ ] At least one direct quotation from the source letter, in the original English, with a link
 - [ ] Sources appropriate to the sub-skill: tier-1 wherever a factual claim depends on one, tier-2 labelled as such
 - [ ] Every factual claim has a source

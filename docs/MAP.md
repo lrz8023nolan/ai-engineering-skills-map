@@ -45,9 +45,11 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 |---|---|---|---|
 | 2.1 | Building full-stack applications | **Complete** | [EN](en/part-2-software-fundamentals/01-building-full-stack-applications.md) · [中文](zh/part-2-software-fundamentals/01-全栈应用构建.md) |
 | 2.2 | Managing data | **Complete** | [EN](en/part-2-software-fundamentals/02-managing-data.md) · [中文](zh/part-2-software-fundamentals/02-数据管理.md) |
-| 2.3 | Designing system architectures | Planned | — |
-| 2.4 | Making systems secure and reliable | Planned | — |
-| 2.5 | Scaling and operating in production | Planned | — |
+| 2.3 | Designing system architectures | **Complete** | [EN](en/part-2-software-fundamentals/03-designing-system-architectures.md) · [中文](zh/part-2-software-fundamentals/03-系统架构设计.md) |
+| 2.4 | Making systems secure and reliable | **Complete** | [EN](en/part-2-software-fundamentals/04-making-systems-secure-and-reliable.md) · [中文](zh/part-2-software-fundamentals/04-安全与可靠性.md) |
+| 2.5 | Scaling and operating in production | **Complete** | [EN](en/part-2-software-fundamentals/05-scaling-and-operating-in-production.md) · [中文](zh/part-2-software-fundamentals/05-规模化与生产运维.md) |
+
+**Part 2 complete — all 5 sub-skills done, in both languages.**
 
 ## Part 3 — Using coding agents
 
