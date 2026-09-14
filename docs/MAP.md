@@ -31,8 +31,8 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 | # | Sub-skill | Status | Manual |
 |---|---|---|---|
 | 1.1 | LLM foundations | **Complete** | [EN](en/part-1-ai-applications/01-llm-foundations.md) · [中文](zh/part-1-ai-applications/01-llm-foundations.md) |
-| 1.2 | Grounding models with data | Planned | — |
-| 1.3 | Building agentic systems | Planned | — |
+| 1.2 | Grounding models with data | **Complete** | [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) · [中文](zh/part-1-ai-applications/02-grounding-models-with-data.md) |
+| 1.3 | Building agentic systems | **Complete** | [EN](en/part-1-ai-applications/03-building-agentic-systems.md) · [中文](zh/part-1-ai-applications/03-building-agentic-systems.md) |
 | 1.4 | Evaluation-driven development | **Complete** | [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) · [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) |
 | 1.5 | Operating in production | Planned | — |
 | 1.6 | Machine learning foundations | Planned | — |

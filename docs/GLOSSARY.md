@@ -125,6 +125,56 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | data exfiltration | 数据外泄 | 中文 |
 | generative UI | 生成式 UI | 混合 |
 
+### Retrieval and grounding 检索与锚定
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| grounding | 锚定 | 中文。指用数据为模型提供可靠的输入上下文 |
+| sparse retrieval | 稀疏检索 | 中文 |
+| dense retrieval | 密集检索 | 中文 |
+| hybrid retrieval | 混合检索 | 中文 |
+| BM25 | — | **保留英文**。算法名，不译 |
+| embedding | 嵌入 | 中文 |
+| embedding model | 嵌入模型 | 中文 |
+| chunk / chunking | 切块 | 中文。统一用「切块」，不用「分块」；动词与名词同形 |
+| rerank / reranking | 重排 | 中文 |
+| query rewrite | 查询改写 | 中文 |
+| context compression | 上下文压缩 | 中文 |
+| OCR | — | **保留英文**。缩略已通用 |
+| hit rate | 命中率 | 中文 |
+| MRR (mean reciprocal rank) | 平均倒数排名 | 中文。首次出现给全称，其后用 MRR |
+| recall@K | 召回率@K | 混合 |
+| faithfulness | 忠实度 | 中文。指生成内容是否基于检索材料 |
+| context precision / recall | 上下文精确度 / 上下文召回率 | 中文 |
+| freshness | 新鲜度 | 中文 |
+
+### Agent architecture Agent 架构
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| prompt chaining | 提示链 | 中文 |
+| routing | 路由 | 中文 |
+| parallelization | 并行化 | 中文 |
+| sectioning | 分段式 | 中文 |
+| voting | 投票式 | 中文 |
+| orchestrator-workers | 编排者-工作者 | 中文 |
+| evaluator-optimizer | 评估者-优化者 | 中文 |
+| sandbox | 沙箱 | 中文 |
+| CLI | — | **保留英文**。缩略已通用 |
+| fallback | 回退 | 中文 |
+| termination condition | 终止条件 | 中文 |
+| context isolation | 上下文隔离 | 中文 |
+| step repetition | 步骤重复 | 中文 |
+| reasoning-action mismatch | 推理与行动不一致 | 中文 |
+| task derailment | 任务脱轨 | 中文 |
+| least privilege | 最小权限 | 中文 |
+| indirect prompt injection | 间接提示注入 | 中文 |
+| privilege escalation | 越权 | 中文 |
+| audit trail | 审计留痕 | 中文 |
+| best-of-N sampling | — | **保留英文**。参数化命名，不译 |
+| ACI (agent-computer interface) | — | **保留英文**。与 HCI 类比而生，中文无对应 |
+| tool design | 工具设计 | 中文 |
+
 ### Machine learning 机器学习
 
 | English | 中文 | Usage 本仓库用法 |
@@ -241,6 +291,11 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `top-p` / `top-k` | 参数名，不译 |
 | `BPE` | 缩略已通用；仅在首次出现时括注「字节对编码」 |
 | `Transformer` | 专有架构名 |
+| `BM25` | 算法名，不译 |
+| `OCR` | 缩略已通用 |
+| `CLI` | 缩略已通用 |
+| `best-of-N sampling` | 参数化命名，不译 |
+| `ACI` | 由与 HCI 类比而生，中文无对应 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
 | `go-to-market` | 缩略 GTM 已通用 |
