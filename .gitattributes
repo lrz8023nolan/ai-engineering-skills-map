@@ -1,0 +1,12 @@
+# Normalise line endings to LF across platforms.
+# This is a documentation repository; LF keeps diffs clean for contributors on
+# Windows, macOS and Linux alike.
+* text=auto eol=lf
+
+# Binary assets should not be touched.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
