@@ -34,8 +34,10 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 | 1.2 | Grounding models with data | **Complete** | [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) · [中文](zh/part-1-ai-applications/02-grounding-models-with-data.md) |
 | 1.3 | Building agentic systems | **Complete** | [EN](en/part-1-ai-applications/03-building-agentic-systems.md) · [中文](zh/part-1-ai-applications/03-building-agentic-systems.md) |
 | 1.4 | Evaluation-driven development | **Complete** | [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) · [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) |
-| 1.5 | Operating in production | Planned | — |
-| 1.6 | Machine learning foundations | Planned | — |
+| 1.5 | Operating in production | **Complete** | [EN](en/part-1-ai-applications/05-operating-in-production.md) · [中文](zh/part-1-ai-applications/05-operating-in-production.md) |
+| 1.6 | Machine learning foundations | **Complete** | [EN](en/part-1-ai-applications/06-machine-learning-foundations.md) · [中文](zh/part-1-ai-applications/06-machine-learning-foundations.md) |
+
+**Part 1 complete — all 6 sub-skills done, in both languages.**
 
 ## Part 2 — Software engineering fundamentals
 

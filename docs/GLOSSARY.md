@@ -175,14 +175,67 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | ACI (agent-computer interface) | — | **保留英文**。与 HCI 类比而生，中文无对应 |
 | tool design | 工具设计 | 中文 |
 
+### Production operations 生产运维
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| observability | 可观测性 | 中文 |
+| metric | 指标 | 中文 |
+| percentile (p50 / p95 / p99) | 分位数 | 中文。写作 p50 / p95 / p99 时保留原文 |
+| time to first token | 首 token 延迟 | 混合 |
+| data drift | 数据漂移 | 中文 |
+| concept drift | 概念漂移 | 中文 |
+| train-serve skew | 训练-服务偏移 | 中文 |
+| shadow deployment | 影子发布 | 中文。首次出现可括注 dark launch |
+| canary release | 金丝雀发布 | 中文 |
+| gradual rollout | 灰度发布 | 中文 |
+| feature flag | 功能开关 | 中文 |
+| incident | 事故 | 中文 |
+| degradation | 降级 | 中文 |
+| SLA / SLO / SLI | — | **保留英文**。缩略已通用 |
+| model routing | 模型路由 | 中文 |
+| continuous batching | 连续批处理 | 中文 |
+| prefix caching | 前缀缓存 | 中文 |
+| speculative decoding | 投机解码 | 中文 |
+| quantisation | 量化 | 中文 |
+| soft target | 软目标 | 中文 |
+| temperature scaling | 温度缩放 | 中文 |
+| PagedAttention | — | **保留原文**。算法名，不译 |
+| KS test | — | **保留英文**。统计检验名称 |
+| PSI (population stability index) | — | **保留英文**。缩略已通用 |
+| CACE (Changing Anything Changes Everything) | — | **保留原文**。首次出现给全称并解释含义 |
+| glue code | 胶水代码 | 中文 |
+| pipeline jungle | 管线丛林 | 中文 |
+| feedback loop | 反馈回路 | 中文 |
+
 ### Machine learning 机器学习
 
 | English | 中文 | Usage 本仓库用法 |
 |---|---|---|
 | supervised learning | 监督学习 | 中文 |
+| unsupervised learning | 无监督学习 | 中文 |
+| self-supervised learning | 自监督学习 | 中文 |
 | reinforcement learning | 强化学习 | 中文 |
 | deep learning | 深度学习 | 中文 |
-| bias / variance | 偏差 / 方差 | 中文 |
+| bias | 偏差 | 中文。本仓库中特指与 variance 相对的欠拟合倾向，不指公平性意义上的偏见；后者应写「偏见」 |
+| variance | 方差 | 中文 |
+| overfitting | 过拟合 | 中文 |
+| underfitting | 欠拟合 | 中文 |
+| avoidable bias | 可避免偏差 | 中文 |
+| human-level performance | 人类水平表现 | 中文 |
+| Bayesian optimal error | 贝叶斯最优误差 | 中文 |
+| learning curve | 学习曲线 | 中文 |
+| dev set | 验证集 | 中文。不译「开发集」——中文语境里易与「开发」混淆 |
+| test set | 测试集 | 中文 |
+| distribution mismatch | 分布不匹配 | 中文 |
+| double descent | 双下降 | 中文 |
+| interpolation threshold | 插值阈值 | 中文 |
+| capacity | 容量 | 中文。指模型表达能力时用「容量」 |
+| regularisation | 正则化 | 中文 |
+| label noise | 标注噪声 | 中文 |
+| annotation | 标注 | 中文 |
+| data-centric | 以数据为中心 | 中文 |
+| model-centric | 以模型为中心 | 中文 |
 | data engineering | 数据工程 | 中文 |
 
 ---
@@ -296,6 +349,10 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `CLI` | 缩略已通用 |
 | `best-of-N sampling` | 参数化命名，不译 |
 | `ACI` | 由与 HCI 类比而生，中文无对应 |
+| `SLA` / `SLO` / `SLI` | 缩略已通用 |
+| `KS test` / `PSI` | 统计检验与指标名称，不译 |
+| `PagedAttention` | 算法名 |
+| `CACE` | 缩略并含解释性全称，中文无法简洁对应 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
 | `go-to-market` | 缩略 GTM 已通用 |
