@@ -278,5 +278,3 @@ None of these are questions of "is the code right". They are questions of **what
 | Tier 1 — official | OWASP Top 10 (web application security risks) | [owasp.org](https://owasp.org/www-project-top-ten/) |
 | Tier 1 — paper | Fielding, *Architectural Styles and the Design of Network-based Software Architectures*, 2000 (the original definition of REST) | [ics.uci.edu](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) |
 | Tier 2 — practitioner | Kent C. Dodds, *The Testing Trophy and Testing Classifications* | [kentcdodds.com](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications) |
-
-> The testing pyramid was introduced by Mike Cohn in *Succeeding with Agile* (2009); cited here at second hand, original not consulted. Rendering strategies and N+1 queries are general engineering practice; no single source is cited.
