@@ -30,7 +30,7 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 
 | # | Sub-skill | Status | Manual |
 |---|---|---|---|
-| 1.1 | LLM foundations | Planned | — |
+| 1.1 | LLM foundations | **Complete** | [EN](en/part-1-ai-applications/01-llm-foundations.md) · [中文](zh/part-1-ai-applications/01-llm-foundations.md) |
 | 1.2 | Grounding models with data | Planned | — |
 | 1.3 | Building agentic systems | Planned | — |
 | 1.4 | Evaluation-driven development | **Complete** | [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) · [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) |

@@ -32,7 +32,7 @@
 
 | # | 子技能 | 状态 | 手册 |
 |---|---|---|---|
-| 1.1 | LLM 基础（LLM foundations） | 待推进 | — |
+| 1.1 | LLM 基础（LLM foundations） | **已完成** | [中文](zh/part-1-ai-applications/01-llm-foundations.md) · [EN](en/part-1-ai-applications/01-llm-foundations.md) |
 | 1.2 | 用数据锚定模型（Grounding models with data） | 待推进 | — |
 | 1.3 | 构建 Agentic 系统（Building agentic systems） | 待推进 | — |
 | 1.4 | 评估驱动开发（Evaluation-driven development） | **已完成** | [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) · [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) |

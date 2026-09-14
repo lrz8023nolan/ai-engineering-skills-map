@@ -35,9 +35,9 @@ Every manual has exactly these six sections, in this order.
 
 ### 4.2 In the map
 **Purpose:** anchor the manual to the source. Prevents drift from what the map actually claims.
-**Include:** a faithful paraphrase of what the source letter says about this sub-skill; one short quotation where the wording carries weight; a link to the letter.
+**Include:** a faithful paraphrase of what the source letter says about this sub-skill; **at least one direct quotation from the letter**; a link to the letter. Quoting the source is mandatory — it anchors the manual to what the map actually claims and lets the reader verify it.
 **Exclude:** long quotation. See §5.3.
-**Length:** 1 paragraph of paraphrase plus one quotation.
+**Length:** 1–2 paragraphs of paraphrase plus one or two quotations.
 
 ### 4.3 Core concepts
 **Purpose:** working knowledge. The menu of things you need to know in order to act.
@@ -76,9 +76,11 @@ Every manual has exactly these six sections, in this order.
 
 ### 5.2 Citation rules
 - Every non-obvious factual claim carries a source.
+- **Quoting the source letter is mandatory.** Every manual must contain at least one direct quotation from its source letter — in the original English, with a link — regardless of how the rest of the manual is sourced. This is the one sourcing requirement that is never relaxed.
 - Cite inline as a Markdown link, and list the source again in §4.6.
 - Never cite a source you have not read. Never cite a secondary source for a claim it is itself only summarising.
 - Where a number is quoted (an accuracy figure, an agreement rate), give the source that measured it.
+- There is no fixed minimum number of tier-1 sources. Research-led sub-skills should carry several; practitioner-led sub-skills (much of Part 4) may legitimately rest mainly on tier-2 material, provided it is labelled as such.
 
 ### 5.3 Quotation and copyright
 The source letters are © DeepLearning.AI. This repository is unofficial and must stay clearly on the right side of that line:
@@ -122,7 +124,8 @@ A manual is complete when all of the following hold:
 
 - [ ] All six sections present, in order, in both languages
 - [ ] 5–8 capability checkpoints, each verifiable
-- [ ] At least 3 tier-1 sources cited
+- [ ] At least one direct quotation from the source letter, in the original English, with a link
+- [ ] Sources appropriate to the sub-skill: tier-1 wherever a factual claim depends on one, tier-2 labelled as such
 - [ ] Every factual claim has a source
 - [ ] Terminology consistent with `GLOSSARY.md`, newly needed terms added there
 - [ ] Quotation limits in §5.3 respected
@@ -131,7 +134,7 @@ A manual is complete when all of the following hold:
 ## 10. Adding a manual
 
 1. Check the sub-skill is listed in `MAP.md` and not already done.
-2. Gather tier-1 sources first. If you cannot find at least three, the manual is not ready — note the gap in `MAP.md` instead.
+2. Gather sources first — tier-1 where the sub-skill has a research or standards base, tier-2 where it is practitioner-led. If a claim cannot be sourced at all, do not make it.
 3. Draft in one language, following the template.
 4. Write the counterpart version.
 5. Add any new terms to `GLOSSARY.md`.

@@ -100,6 +100,27 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | reasoning effort | 推理强度 | 中文 |
 | sampling parameter | 采样参数 | 中文 |
 | cache hit | 缓存命中 | 中文 |
+| prompt caching | 提示缓存 | 中文 |
+| KV cache | — | **保留英文**。指注意力机制中缓存的键值状态 |
+| prefix | 前缀 | 中文 |
+| tokenization | 分词 | 中文 |
+| tokenizer | 分词器 | 中文 |
+| BPE (byte-pair encoding) | — | **保留英文**。首次出现写 BPE（字节对编码），其后用 BPE |
+| autoregressive | 自回归 | 中文 |
+| logits | — | **保留英文**。指 softmax 之前的原始分数 |
+| attention | 注意力 | 中文 |
+| transformer | Transformer | 保留原文。专有架构名，不译 |
+| temperature | 温度 | 中文 |
+| top-p | — | **保留英文**。即核采样；参数名不译 |
+| nucleus sampling | 核采样 | 中文 |
+| top-k | — | **保留英文**。参数名不译 |
+| greedy decoding | 贪心解码 | 中文 |
+| hallucination | 幻觉 | 中文 |
+| calibration | 校准 | 中文 |
+| scaling law | 缩放定律 | 中文 |
+| retrieval | 检索 | 中文 |
+| latency | 延迟 | 中文 |
+| throughput | 吞吐量 | 中文 |
 | multimodal | 多模态 | 中文 |
 | data exfiltration | 数据外泄 | 中文 |
 | generative UI | 生成式 UI | 混合 |
@@ -215,6 +236,11 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `LLM-as-a-judge` | 直译冗长，业内直接用英文 |
 | `trace` | 避免与 trajectory（轨迹）的中文译名冲突 |
 | `agent harness` | 避免与 framework（框架）混淆 |
+| `KV cache` | 中文无通用对应；作为技术术语直接用英文 |
+| `logits` | 中文无简洁对应 |
+| `top-p` / `top-k` | 参数名，不译 |
+| `BPE` | 缩略已通用；仅在首次出现时括注「字节对编码」 |
+| `Transformer` | 专有架构名 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
 | `go-to-market` | 缩略 GTM 已通用 |
