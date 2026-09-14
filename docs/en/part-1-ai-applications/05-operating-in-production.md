@@ -117,7 +117,7 @@ The common requirement: **you must be able to stop the bleeding without shipping
 
 The hardest part of operating in production is the debt you cannot see.
 
-> Sculley et al., *Hidden Technical Debt in Machine Learning Systems*, NeurIPS 2015 — [paper](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
+> [Sculley et al., *Hidden Technical Debt in Machine Learning Systems*, NeurIPS 2015](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
 
 The paper's first observation lands hard: in a real ML system, **the model code is a small fraction of the whole**; the rest is data pipelines, configuration, monitoring, serving and glue code.
 
@@ -170,7 +170,7 @@ A common mistake is seeing a large bill and reaching immediately for a cheaper m
 
 If you do only one thing to cut cost, it is usually **model routing** — sending simple requests to a small model.
 
-> Ong et al., *RouteLLM: Learning to Route LLMs with Preference Data*, LMSYS / UC Berkeley, [arXiv:2406.18665](https://arxiv.org/abs/2406.18665)
+> [Ong et al., *RouteLLM: Learning to Route LLMs with Preference Data*, LMSYS / UC Berkeley, arXiv:2406.18665](https://arxiv.org/abs/2406.18665)
 
 The key design decision is training the router on **human preference data** rather than only judging "did the small model get it right". The difference matters: on the same problem both models may produce the correct answer, but the larger model's explanation is clearer and users actually prefer it — a correctness-only router would misclassify those requests as fine for the small model.
 
@@ -180,7 +180,7 @@ The same experiments show the router learns the difficulty of the *problem*, so 
 
 ### 4.6 Distillation: why soft targets carry more information
 
-> Hinton, Vinyals & Dean, *Distilling the Knowledge in a Neural Network*, 2015 — [arXiv:1503.02531](https://arxiv.org/abs/1503.02531)
+> [Hinton, Vinyals & Dean, *Distilling the Knowledge in a Neural Network*, 2015 — arXiv:1503.02531](https://arxiv.org/abs/1503.02531)
 
 The core insight: **a large model's full probability distribution carries far more information than its argmax label.** When a strong classifier says "cat, 0.92", the remaining 0.08 spread across "lynx", "fox" and "dog" encodes the teacher's learned **similarity structure between classes**. Training a student to match those soft targets rather than just the hard label transfers that structure.
 
@@ -192,7 +192,7 @@ The engineering implication: distillation is the legitimate route from "expensiv
 
 If you self-host or run your own inference service, the optimisation most worth knowing is KV cache memory management.
 
-> Kwon et al., *Efficient Memory Management for Large Language Model Serving with PagedAttention*, SOSP 2023 (Best Paper) — [arXiv:2309.06180](https://arxiv.org/abs/2309.06180)
+> [Kwon et al., *Efficient Memory Management for Large Language Model Serving with PagedAttention*, SOSP 2023（最佳论文）— arXiv:2309.06180](https://arxiv.org/abs/2309.06180)
 
 The traditional approach pre-allocates a contiguous block of GPU memory per request, sized for the maximum possible output. But output length cannot be known in advance, producing three kinds of waste: reserved but unused, unfilled space inside a block, and fragmented free space that cannot be reassembled for a new request. What the paper measured: **of allocated KV cache memory, only 20.4%–38.2% actually held useful token states** — 60% to 80% was wasted.
 

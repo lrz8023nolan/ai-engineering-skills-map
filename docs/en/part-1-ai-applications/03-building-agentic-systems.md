@@ -124,7 +124,7 @@ Anthropic's conclusion is that most tasks do not need an agent; an augmented LLM
 
 That advice is backed by measurement. Cemri et al. ran a systematic study on today's most capable multi-agent frameworks:
 
-> Cemri et al., *Why Do Multi-Agent LLM Systems Fail?*, [arXiv:2503.13657](https://arxiv.org/abs/2503.13657), NeurIPS 2025
+> [Cemri et al., *Why Do Multi-Agent LLM Systems Fail?*, arXiv:2503.13657, NeurIPS 2025](https://arxiv.org/abs/2503.13657)
 
 Across seven popular open-source multi-agent frameworks they measured a **41%–86.7% failure rate**, and state plainly: "Despite enthusiasm for Multi-Agent LLM Systems (MAS), their performance gains on popular benchmarks are often minimal" — relative both to single-agent frameworks and to simple baselines such as best-of-N sampling.
 
@@ -145,7 +145,7 @@ Anthropic says it outright: the pattern is a **poor fit for tightly coupled work
 
 ### 4.3 Why multi-agent fails: MAST's three categories, fourteen modes
 
-This is the best-evidenced classification of multi-agent failure available. MAST (Multi-Agent System Failure Taxonomy) was built from 1,642 annotated execution traces across seven frameworks, with inter-annotator agreement at Cohen's κ = 0.88. It identifies **14 failure modes in three categories**:
+This is the best-evidenced classification of multi-agent failure available. [MAST（Multi-Agent System Failure Taxonomy）](https://arxiv.org/abs/2503.13657) was built from 1,642 annotated execution traces across seven frameworks, with inter-annotator agreement at Cohen's κ = 0.88. It identifies **14 failure modes in three categories**:
 
 | Category | Share | Principal modes |
 |---|---|---|
@@ -161,7 +161,7 @@ The second category, by contrast, cannot occur in a single-agent system at all. 
 
 Cognition offered a mechanistic explanation in a widely discussed post:
 
-> Walden Yan, *Don't Build Multi-Agents*, Cognition, 2025-06
+> [Walden Yan, *Don't Build Multi-Agents*, Cognition, 2025-06](https://cognition.com/blog/dont-build-multi-agents)
 
 The core argument: **actions carry implicit decisions, and conflicting decisions carry bad results.** When each agent holds only partial context, the implicit decisions it makes conflict with the others' in ways no individual agent can see.
 
@@ -184,7 +184,7 @@ The verification step is the most contained, most measurable and largest-effect 
 
 An easily overlooked reality: even when you know the system failed, **automatically working out which agent failed and at which step is currently not something we can do well.**
 
-Zhang et al. benchmarked automated failure attribution across 127 multi-agent systems (*Which Agent Causes Task Failures and When?*, [arXiv:2505.00212](https://arxiv.org/abs/2505.00212), ICML 2025). The best method identified the **responsible agent** with 53.5% accuracy and the **responsible step** with only 14.2% — while frontier reasoning models fell below the automated baseline on step attribution.
+Zhang et al. benchmarked automated failure attribution across 127 multi-agent systems ([*Which Agent Causes Task Failures and When?*, arXiv:2505.00212, ICML 2025](https://arxiv.org/abs/2505.00212)). The best method identified the **responsible agent** with 53.5% accuracy and the **responsible step** with only 14.2% — while frontier reasoning models fell below the automated baseline on step attribution.
 
 The reason is that failures are usually **cascades**: an early specification ambiguity surfaces ten steps later as a verification failure, and the trace does not mark the causal link. That is why "read the logs and find the cause" is especially inefficient on multi-agent systems.
 
@@ -198,13 +198,13 @@ As turns accumulate, context grows monotonically until it hits the window limit 
 
 The caution: **summarisation loses information, and it loses it in uncontrolled ways.** In the MAST taxonomy, "loss of conversation history" is itself a distinct failure mode. So summarisation should be conservative, and critical constraints — task specifications, role boundaries — should be resident content rather than part of what gets compressed.
 
-> Related earlier work: Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023 (cited at second hand; original not consulted)
+> Related earlier work: [Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023](https://arxiv.org/abs/2310.08560)
 
 ### 4.8 Security: indirect prompt injection and data exfiltration
 
 Once a system can read external content — web pages, documents, email, tool return values — that content becomes an **instruction channel**.
 
-> Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023 (cited at second hand; original not consulted)
+> [Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023](https://arxiv.org/abs/2302.12173)
 
 The mechanism: an attacker hides instructions inside content the model will read, and the model cannot reliably separate "data I received" from "instructions I received". Combined with tool permissions, a successful injection can lead to data exfiltration — sending sensitive content to a location the attacker controls.
 
@@ -241,5 +241,5 @@ The three directions Ng names — voice agents, computer-use agents, generative 
 | Tier 1 — official | OpenAI, *A Practical Guide to Building Agents*, 2025-04 | [PDF](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) |
 | Tier 1 — official | Anthropic, engineering write-up on its multi-agent research system, 2025-06 | [anthropic.com](https://www.anthropic.com/engineering/multi-agent-research-system) |
 | Tier 2 — practitioner | Walden Yan (Cognition), *Don't Build Multi-Agents*, 2025-06 | [cognition.ai](https://cognition.ai/blog/dont-build-multi-agents) |
-| Tier 2 | Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023 (original not consulted) | — |
-| Tier 2 | Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023 (original not consulted) | — |
+| Tier 1 — paper | Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023 | [arXiv:2310.08560](https://arxiv.org/abs/2310.08560) |
+| Tier 1 — paper | Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023 | [arXiv:2302.12173](https://arxiv.org/abs/2302.12173) |

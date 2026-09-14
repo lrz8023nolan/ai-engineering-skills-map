@@ -165,9 +165,9 @@ That last row is the key: **traditional consumers fail loudly when data is missi
 
 The "pick two of three" formulation is extremely widespread, and **it is wrong**. Brewer himself wrote a paper in 2012 to correct it:
 
-> Brewer, *CAP Twelve Years Later: How the "Rules" Have Changed*, IEEE Computer 45(2), 2012 — [DOI](https://doi.org/10.1109/mc.2012.37)
+> [Brewer, *CAP Twelve Years Later: How the "Rules" Have Changed*, IEEE Computer 45(2), 2012](https://doi.org/10.1109/mc.2012.37)
 
-The original theorem (conjectured by Brewer in 2000, proved by Gilbert and Lynch in 2002) says: **in the presence of a network partition**, a distributed system cannot simultaneously guarantee strong consistency and availability.
+The original theorem (conjectured by [Brewer in 2000](https://dl.acm.org/doi/abs/10.1145/343477.343502), proved by [Gilbert and Lynch in 2002](https://dl.acm.org/doi/10.1145/564585.564601)) says: **in the presence of a network partition**, a distributed system cannot simultaneously guarantee strong consistency and availability.
 
 Once misread as "pick two", three specific errors follow:
 
@@ -179,7 +179,7 @@ Once misread as "pick two", three specific errors follow:
 
 **The practical implication**: do not justify a design with "we chose AP, so inconsistency is fine", because that sentence rests on the misreading. The real question is more specific — **during a partition, should this particular operation refuse service or return possibly-stale data** — and, once the partition heals, how the inconsistency gets repaired.
 
-> Related: Kleppmann, *Please stop calling databases CP or AP*, 2015, discusses this in more detail.
+> Related: [Kleppmann, *Please stop calling databases CP or AP*, 2015](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html) discusses this in more detail.
 
 ### 4.2 Isolation levels: the standard's own definitions are ambiguous
 
@@ -187,7 +187,7 @@ One easily overlooked fact about names like "read committed" and "repeatable rea
 
 This was established by an influential paper:
 
-> Berenson, Bernstein, Gray, Melton, O'Neil & O'Neil, *A Critique of ANSI SQL Isolation Levels*, SIGMOD 1995
+> [Berenson, Bernstein, Gray, Melton, O'Neil & O'Neil, *A Critique of ANSI SQL Isolation Levels*, SIGMOD 1995](https://dl.acm.org/doi/10.1145/223784.223785)
 
 The paper did two things: it showed that the standard's natural-language definitions of the isolation levels are ambiguous (the same wording can be read into different implementations), and it **introduced snapshot isolation** — a level absent from the standard at the time but already widely implemented in commercial databases.
 
@@ -204,7 +204,7 @@ The 1970 paper is often remembered as "proposing to store data in tables". Table
 
 > "Future users of large data banks must be protected from having to know how the data is organized in the machine."
 
-> Codd, *A Relational Model of Data for Large Shared Data Banks*, Communications of the ACM, 1970
+> [Codd, *A Relational Model of Data for Large Shared Data Banks*, Communications of the ACM, 1970](https://dl.acm.org/doi/10.1145/362384.362685)
 
 This is **data independence**: physical independence (applications need not know how data is stored) and logical independence (applications need not know how the logical structure changes). Before this, hierarchical and network models required programmers to know physical locations and navigation paths — **changing one field's structure could mean rewriting large amounts of program code.**
 
@@ -283,5 +283,3 @@ Back to Ng's most important sentence. Unfolded into engineering terms, there are
 | Tier 1 — paper | DeCandia et al., *Dynamo: Amazon's Highly Available Key-value Store*, SOSP 2007 | [ACM](https://dl.acm.org/doi/10.1145/1294261.1294281) |
 | Tier 1 — book | Kleppmann, *Designing Data-Intensive Applications*, O'Reilly, 2017 | [dataintensive.net](https://dataintensive.net/) |
 | Tier 2 — practitioner | Kleppmann, *Please stop calling databases CP or AP*, 2015 | [martin.kleppmann.com](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html) |
-
-> The expand-contract migration pattern and the schema-on-write / schema-on-read distinction are general engineering practice; no single source is cited. For the specific provisions of GDPR or China's Personal Information Protection Law, consult the official published texts.

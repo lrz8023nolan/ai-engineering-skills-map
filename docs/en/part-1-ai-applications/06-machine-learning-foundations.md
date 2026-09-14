@@ -127,7 +127,7 @@ What needs engineering: label consistency (do annotators read the rule the same 
 
 The textbook says: as model complexity grows, performance improves then degrades — a U-shape. In modern deep learning **that picture is incomplete.**
 
-> Belkin, Hsu, Ma & Mandal, *Reconciling modern machine learning practice and the bias-variance trade-off*, PNAS, [arXiv:1812.11118](https://arxiv.org/abs/1812.11118)
+> [Belkin, Hsu, Ma & Mandal, *Reconciling modern machine learning practice and the bias-variance trade-off*, PNAS, arXiv:1812.11118](https://arxiv.org/abs/1812.11118)
 
 The paper's observation: in modern practice, models with far more parameters than training points are trained to **interpolate the data almost exactly**. Classically that would be severe overfitting, yet they perform well on test data.
 
@@ -145,7 +145,7 @@ This explains why "bigger models are better" keeps being true in deep learning: 
 
 A sharper experimental result:
 
-> Zhang, Bengio, Hardt, Recht & Vinyals, *Understanding deep learning requires rethinking generalization*, ICLR 2017 — [arXiv:1611.03530](https://arxiv.org/abs/1611.03530)
+> [Zhang, Bengio, Hardt, Recht & Vinyals, *Understanding deep learning requires rethinking generalization*, ICLR 2017, arXiv:1611.03530](https://arxiv.org/abs/1611.03530)
 
 The design is clean: take a network that reaches 94% test accuracy on CIFAR-10, **replace the true labels with entirely random ones**, and train as usual. The results:
 
@@ -162,7 +162,7 @@ For practice: **"the model is too big, so it overfits" is an unreliable inferenc
 
 Double descent also appears along the **number of training samples** axis, not just capacity.
 
-> Nakkiran et al., *Deep Double Descent: Where Bigger Models and More Data Hurt*, [arXiv:1912.02292](https://arxiv.org/abs/1912.02292)
+> [Nakkiran et al., *Deep Double Descent: Where Bigger Models and More Data Hurt*, arXiv:1912.02292](https://arxiv.org/abs/1912.02292)
 
 The title is the finding — **in a particular regime, increasing either model size or data volume can make performance worse.** It runs against intuition, but the mechanism matches §4.1: when model and data sit near the interpolation threshold, the system is at its least stable.
 

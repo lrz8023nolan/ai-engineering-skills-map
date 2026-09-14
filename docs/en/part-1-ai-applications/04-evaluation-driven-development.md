@@ -89,7 +89,7 @@ These three paths are indistinguishable until you look at individual failures. W
 
 From a systematic study of the approach:
 
-> Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*, NeurIPS 2023 — https://arxiv.org/abs/2306.05685
+> [Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*, NeurIPS 2023](https://arxiv.org/abs/2306.05685)
 
 | Bias | Manifestation | Mitigation |
 |---|---|---|

@@ -126,7 +126,7 @@ Anthropic 的结论是：大多数任务不需要 agent，增强型 LLM（模型
 
 这个建议在数据上得到了印证。Cemri 等人对当前最先进的多智能体框架做过一次系统测量：
 
-> Cemri et al., *Why Do Multi-Agent LLM Systems Fail?*, [arXiv:2503.13657](https://arxiv.org/abs/2503.13657)，NeurIPS 2025
+> [Cemri et al., *Why Do Multi-Agent LLM Systems Fail?*, arXiv:2503.13657, NeurIPS 2025](https://arxiv.org/abs/2503.13657)
 
 他们在 7 个流行的开源多智能体框架上测到 **41%–86.7% 的失败率**，并明确指出：「尽管多智能体系统受到热捧，它们在常见基准上的性能提升相对于单智能体框架、或相对于 best-of-N 采样这样的简单基线，往往很有限。」
 
@@ -147,7 +147,7 @@ Anthropic 自己就说得很直白：这个模式**不适合编程这类紧耦�
 
 ### 4.3 多智能体为什么会失败：MAST 的三类十四种
 
-这是目前关于多智能体失败最有据可依的分类。MAST（Multi-Agent System Failure Taxonomy）基于 1,642 条标注过的执行 trace、覆盖 7 个框架构建，标注者间一致性达到 Cohen's κ = 0.88。共 **14 种失败模式，归为三类**：
+这是目前关于多智能体失败最有据可依的分类。[MAST（Multi-Agent System Failure Taxonomy）](https://arxiv.org/abs/2503.13657)基于 1,642 条标注过的执行 trace、覆盖 7 个框架构建，标注者间一致性达到 Cohen's κ = 0.88。共 **14 种失败模式，归为三类**：
 
 | 类别 | 占比 | 主要失败模式 |
 |---|---|---|
@@ -163,7 +163,7 @@ Anthropic 自己就说得很直白：这个模式**不适合编程这类紧耦�
 
 Cognition 在一篇引起广泛讨论的文章里给出了机制性的解释：
 
-> Walden Yan, *Don't Build Multi-Agents*, Cognition, 2025-06
+> [Walden Yan, *Don't Build Multi-Agents*, Cognition, 2025-06](https://cognition.com/blog/dont-build-multi-agents)
 
 核心论点是：**动作承载着隐含的决策，而相互冲突的决策会带来糟糕的结果。** 当每个 agent 只掌握部分上下文时，它们各自做出的隐含决策会以任何单个 agent 都看不见的方式互相冲突。
 
@@ -186,7 +186,7 @@ Cognition 在一篇引起广泛讨论的文章里给出了机制性的解释：
 
 一个容易被忽略的现实：即使你知道系统失败了，**自动定位是哪个 agent、在哪一步出问题，目前也做不好**。
 
-Zhang 等人对 127 个多智能体系统做了自动化失败归因的基准测试（*Which Agent Causes Task Failures and When?*, [arXiv:2505.00212](https://arxiv.org/abs/2505.00212)，ICML 2025），最优方法识别**责任 agent** 的准确率为 53.5%，定位**责任步骤**的准确率仅 14.2%——而前沿推理模型在步骤归因上甚至低于自动化基线。
+Zhang 等人对 127 个多智能体系统做了自动化失败归因的基准测试（[*Which Agent Causes Task Failures and When?*, arXiv:2505.00212, ICML 2025](https://arxiv.org/abs/2505.00212)），最优方法识别**责任 agent** 的准确率为 53.5%，定位**责任步骤**的准确率仅 14.2%——而前沿推理模型在步骤归因上甚至低于自动化基线。
 
 原因是失败通常以**级联**形式出现：早期的一个规格模糊，要到十步之后才以验证失败的形式暴露出来，而 trace 本身不会标记这条因果链。这就是为什么"看日志找原因"在多智能体系统里格外低效。
 
@@ -200,13 +200,13 @@ Zhang 等人对 127 个多智能体系统做了自动化失败归因的基准测
 
 需要警惕的是：**摘要会丢失信息，而且丢失方式不可控。** MAST 分类里"丢失对话历史"本身就是一个独立的失败模式。所以摘要策略要保守，关键约束（如任务规格、角色边界）应当作为常驻内容，而不是被压缩掉的部分。
 
-> 相关早期工作：Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023（本文按二手引用，未见原文）
+> 相关早期工作：[Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023](https://arxiv.org/abs/2310.08560)
 
 ### 4.8 安全：间接提示注入与数据外泄
 
 一旦系统能读外部内容（网页、文档、邮件、工具返回值），这些内容就成了一条**指令通道**。
 
-> Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023（本文按二手引用，未见原文）
+> [Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023](https://arxiv.org/abs/2302.12173)
 
 机制是：攻击者把指令藏在模型会读到的内容里，模型无法可靠地区分"我收到的数据"和"我收到的指令"。一旦触发，配合工具权限，可能导致数据外泄——把敏感内容发送到攻击者控制的位置。
 
@@ -243,5 +243,5 @@ Zhang 等人对 127 个多智能体系统做了自动化失败归因的基准测
 | 一手 · 官方 | OpenAI, *A Practical Guide to Building Agents*, 2025-04 | [PDF](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) |
 | 一手 · 官方 | Anthropic, 多智能体研究系统的工程说明，2025-06 | [anthropic.com](https://www.anthropic.com/engineering/multi-agent-research-system) |
 | 实践者 | Walden Yan (Cognition), *Don't Build Multi-Agents*, 2025-06 | [cognition.ai](https://cognition.ai/blog/dont-build-multi-agents) |
-| 二手 | Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023（未读原文） | — |
-| 二手 | Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023（未读原文） | — |
+| 一手 · 论文 | Packer et al., *MemGPT: Towards LLMs as Operating Systems*, 2023 | [arXiv:2310.08560](https://arxiv.org/abs/2310.08560) |
+| 一手 · 论文 | Greshake et al., *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*, 2023 | [arXiv:2302.12173](https://arxiv.org/abs/2302.12173) |
