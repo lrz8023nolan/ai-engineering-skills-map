@@ -1,0 +1,32 @@
+# License
+
+## Original content of this repository
+
+All original material authored for this repository — including the written
+summaries, explanations, glossaries, structure and code — is licensed under the
+**Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+You are free to share and adapt this material for any purpose, provided you give
+appropriate credit and indicate if changes were made.
+
+- License deed: https://creativecommons.org/licenses/by/4.0/
+- Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+## Third-party material (IMPORTANT)
+
+This repository is an independent, unofficial study resource. It is **not**
+affiliated with, endorsed by, or sponsored by Andrew Ng or DeepLearning.AI.
+
+The following material is **NOT** covered by the CC BY 4.0 license above and
+remains the property of its respective owners:
+
+- *The AI Engineering Skills Map* and the associated letters, published by
+  DeepLearning.AI (The Batch), are © DeepLearning.AI. Links to the original
+  letters are provided in [`docs/MAP.md`](docs/MAP.md). This repository
+  summarises and briefly quotes that material for study and commentary purposes;
+  it does not reproduce it in full.
+- Academic papers and third-party documentation referenced throughout the
+  repository remain under their own respective licenses.
+
+If you are a rights holder and believe any content here exceeds fair use or
+quotation, please open an issue and it will be amended or removed.
