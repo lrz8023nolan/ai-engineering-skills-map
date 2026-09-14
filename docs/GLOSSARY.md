@@ -278,6 +278,59 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | technical debt | 技术债 | 中文 |
 | incident management | 事故管理 | 中文 |
 
+### Web and application engineering Web 与应用工程
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| UI component | UI 组件 | 混合 |
+| rendering | 渲染 | 中文 |
+| CSR / SSR / SSG / ISR | — | **保留英文**。四种渲染策略的缩写，中文无通用对应 |
+| CDN | — | **保留英文**。缩略已通用 |
+| reverse proxy | 反向代理 | 中文 |
+| REST | — | **保留原文**。架构风格名 |
+| RPC | — | **保留英文**。缩略已通用 |
+| GraphQL | — | **保留原文**。技术名 |
+| idempotent / idempotency | 幂等的 / 幂等性 | 中文 |
+| idempotency key | 幂等键 | 中文 |
+| authentication | 认证 | 中文。回答「你是谁」 |
+| authorization | 授权 | 中文。回答「你能做什么」。**不要与 authentication 混用** |
+| session | 会话 | 中文 |
+| stateful / stateless | 有状态 / 无状态 | 中文 |
+| PKCE | — | **保留英文**。OAuth 扩展的缩略 |
+| object-level access control | 对象级访问控制 | 中文 |
+| ORM | — | **保留英文**。缩略已通用 |
+| N+1 query | N+1 查询 | 混合 |
+| eager loading | 预加载 | 中文 |
+| unit test / integration test / end-to-end test | 单元测试 / 集成测试 / 端到端测试 | 中文 |
+| testing pyramid | 测试金字塔 | 中文 |
+| testing trophy | 测试奖杯 | 中文 |
+| curb-cut effect | 路缘坡效应 | 中文 |
+
+### Data management 数据管理
+
+| English | 中文 | Usage 本仓库用法 |
+|---|---|---|
+| access pattern | 访问模式 | 中文 |
+| normalisation / denormalisation | 规范化 / 反规范化 | 中文 |
+| ACID | — | **保留英文**。缩略已通用 |
+| isolation level | 隔离级别 | 中文 |
+| dirty read | 脏读 | 中文 |
+| non-repeatable read | 不可重复读 | 中文 |
+| phantom read | 幻读 | 中文 |
+| snapshot isolation | 快照隔离 | 中文 |
+| serializable | 可串行化 | 中文 |
+| eventual consistency | 最终一致性 | 中文 |
+| CAP | — | **保留英文**。定理性缩略 |
+| partition | 分区 | 中文。指网络分区时用「分区」 |
+| replica | 副本 | 中文 |
+| schema-on-write / schema-on-read | 写时模式 / 读时模式 | 中文 |
+| data independence | 数据独立性 | 中文 |
+| migration | 迁移 | 中文 |
+| expand-contract | — | **保留英文**。迁移模式名，中文描述冗长 |
+| erasure | 可删除性 | 中文。指「用户要求删除时能否真正删净」 |
+| data minimisation | 数据最小化 | 中文 |
+| index | 索引 | 中文 |
+
 ---
 
 ## Part 3 — Using coding agents 使用编程 Agent
@@ -353,6 +406,10 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `KS test` / `PSI` | 统计检验与指标名称，不译 |
 | `PagedAttention` | 算法名 |
 | `CACE` | 缩略并含解释性全称，中文无法简洁对应 |
+| `CSR` / `SSR` / `SSG` / `ISR` | 渲染策略缩写，中文无通用对应 |
+| `CDN` / `ORM` / `ACID` / `CAP` / `PKCE` / `RPC` | 缩略已通用 |
+| `REST` / `GraphQL` | 架构风格与技术名 |
+| `expand-contract` | 迁移模式名，中文描述冗长 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
 | `go-to-market` | 缩略 GTM 已通用 |

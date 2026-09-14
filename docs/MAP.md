@@ -43,8 +43,8 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 
 | # | Sub-skill | Status | Manual |
 |---|---|---|---|
-| 2.1 | Building full-stack applications | Planned | — |
-| 2.2 | Managing data | Planned | — |
+| 2.1 | Building full-stack applications | **Complete** | [EN](en/part-2-software-fundamentals/01-building-full-stack-applications.md) · [中文](zh/part-2-software-fundamentals/01-全栈应用构建.md) |
+| 2.2 | Managing data | **Complete** | [EN](en/part-2-software-fundamentals/02-managing-data.md) · [中文](zh/part-2-software-fundamentals/02-数据管理.md) |
 | 2.3 | Designing system architectures | Planned | — |
 | 2.4 | Making systems secure and reliable | Planned | — |
 | 2.5 | Scaling and operating in production | Planned | — |
