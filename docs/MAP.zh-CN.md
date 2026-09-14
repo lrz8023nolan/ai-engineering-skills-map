@@ -32,12 +32,12 @@
 
 | # | 子技能 | 状态 | 手册 |
 |---|---|---|---|
-| 1.1 | LLM 基础（LLM foundations） | **已完成** | [中文](zh/part-1-ai-applications/01-llm-foundations.md) · [EN](en/part-1-ai-applications/01-llm-foundations.md) |
-| 1.2 | 用数据锚定模型（Grounding models with data） | **已完成** | [中文](zh/part-1-ai-applications/02-grounding-models-with-data.md) · [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) |
-| 1.3 | 构建 Agentic 系统（Building agentic systems） | **已完成** | [中文](zh/part-1-ai-applications/03-building-agentic-systems.md) · [EN](en/part-1-ai-applications/03-building-agentic-systems.md) |
-| 1.4 | 评估驱动开发（Evaluation-driven development） | **已完成** | [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) · [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) |
-| 1.5 | 生产环境运维（Operating in production） | **已完成** | [中文](zh/part-1-ai-applications/05-operating-in-production.md) · [EN](en/part-1-ai-applications/05-operating-in-production.md) |
-| 1.6 | 机器学习基础（Machine learning foundations） | **已完成** | [中文](zh/part-1-ai-applications/06-machine-learning-foundations.md) · [EN](en/part-1-ai-applications/06-machine-learning-foundations.md) |
+| 1.1 | LLM 基础（LLM foundations） | **已完成** | [中文](zh/part-1-ai-applications/01-大语言模型基础.md) · [EN](en/part-1-ai-applications/01-llm-foundations.md) |
+| 1.2 | 用数据锚定模型（Grounding models with data） | **已完成** | [中文](zh/part-1-ai-applications/02-用数据锚定模型.md) · [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) |
+| 1.3 | 构建 Agentic 系统（Building agentic systems） | **已完成** | [中文](zh/part-1-ai-applications/03-构建Agentic系统.md) · [EN](en/part-1-ai-applications/03-building-agentic-systems.md) |
+| 1.4 | 评估驱动开发（Evaluation-driven development） | **已完成** | [中文](zh/part-1-ai-applications/04-评估驱动开发.md) · [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) |
+| 1.5 | 生产环境运维（Operating in production） | **已完成** | [中文](zh/part-1-ai-applications/05-生产环境运维.md) · [EN](en/part-1-ai-applications/05-operating-in-production.md) |
+| 1.6 | 机器学习基础（Machine learning foundations） | **已完成** | [中文](zh/part-1-ai-applications/06-机器学习基础.md) · [EN](en/part-1-ai-applications/06-machine-learning-foundations.md) |
 
 **Part 1 已完成——6 个子技能全部完成，中英双语齐备。**
 

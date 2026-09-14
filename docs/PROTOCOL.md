@@ -111,13 +111,20 @@ State the strength of a claim. If something is a reasonable inference, say "like
 ## 8. File naming and placement
 
 ```
-docs/{en|zh}/part-{n}-{part-slug}/{nn}-{sub-skill-slug}.md
+docs/en/part-{n}-{part-slug}/{nn}-{english-slug}.md
+docs/zh/part-{n}-{part-slug}/{nn}-{chinese-title}.md
 ```
 
-- `nn` is the sub-skill number from [`MAP.md`](MAP.md), zero-padded, so that alphabetical order matches study order.
-- Slugs are lowercase ASCII with hyphens. No spaces, no non-ASCII characters in paths.
+- `nn` is the sub-skill number from [`MAP.md`](MAP.md), zero-padded, so that files sort in study order.
+- **English manuals** use lowercase ASCII slugs with hyphens. No spaces, no non-ASCII characters.
+- **Chinese manuals** use a short Chinese title, matching the sub-skill's Chinese name in `MAP.zh-CN.md`. The Chinese tree is browsed directly by Chinese readers on GitHub, so readable filenames are worth more there than ASCII consistency.
+- Directory names (`part-1-ai-applications` and so on) stay ASCII in both trees, so that URLs remain stable and shareable.
 
-Example: `docs/en/part-1-ai-applications/04-evaluation-driven-development.md`
+Examples:
+- `docs/en/part-1-ai-applications/04-evaluation-driven-development.md`
+- `docs/zh/part-1-ai-applications/04-评估驱动开发.md`
+
+**Renaming a file requires updating the links in both `MAP.md` and `MAP.zh-CN.md` in the same change.** A rename without those updates silently produces dead links.
 
 ## 9. Definition of done
 

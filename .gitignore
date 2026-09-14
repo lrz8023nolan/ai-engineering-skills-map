@@ -20,3 +20,5 @@ node_modules/
 
 # Misc
 *.log
+.gc.txt
+.gitcheck.txt

@@ -111,13 +111,20 @@
 ## 8. 文件命名与位置
 
 ```
-docs/{en|zh}/part-{n}-{part-slug}/{nn}-{子技能-slug}.md
+docs/en/part-{n}-{part-slug}/{nn}-{english-slug}.md
+docs/zh/part-{n}-{part-slug}/{nn}-{中文标题}.md
 ```
 
-- `nn` 是 [`MAP.md`](MAP.md) 中的子技能编号，补零到两位，使字母序与学习顺序一致。
-- slug 用英文小写加连字符。路径中不得有空格或非 ASCII 字符。
+- `nn` 是 [`MAP.md`](MAP.md) 中的子技能编号，补零到两位，使文件按学习顺序排列。
+- **英文手册**：英文小写 slug 加连字符，不得有空格或非 ASCII 字符。
+- **中文手册**：用简短的中文标题，与 `MAP.zh-CN.md` 中该子技能的中文名一致。中文目录是给中文读者直接在 GitHub 上浏览的，可读的文件名比 ASCII 一致性更有价值。
+- 目录名（`part-1-ai-applications` 等）两个语言树都保持英文 ASCII，以保证 URL 稳定、可分享。
 
-示例：`docs/zh/part-1-ai-applications/04-evaluation-driven-development.md`
+示例：
+- `docs/en/part-1-ai-applications/04-evaluation-driven-development.md`
+- `docs/zh/part-1-ai-applications/04-评估驱动开发.md`
+
+**改文件名必须同步更新 `MAP.md` 与 `MAP.zh-CN.md` 中的链接。** 只改名不改链接会产生死链，而且不会有任何提示。
 
 ## 9. 完成的定义
 

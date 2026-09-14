@@ -30,12 +30,12 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 
 | # | Sub-skill | Status | Manual |
 |---|---|---|---|
-| 1.1 | LLM foundations | **Complete** | [EN](en/part-1-ai-applications/01-llm-foundations.md) · [中文](zh/part-1-ai-applications/01-llm-foundations.md) |
-| 1.2 | Grounding models with data | **Complete** | [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) · [中文](zh/part-1-ai-applications/02-grounding-models-with-data.md) |
-| 1.3 | Building agentic systems | **Complete** | [EN](en/part-1-ai-applications/03-building-agentic-systems.md) · [中文](zh/part-1-ai-applications/03-building-agentic-systems.md) |
-| 1.4 | Evaluation-driven development | **Complete** | [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) · [中文](zh/part-1-ai-applications/04-evaluation-driven-development.md) |
-| 1.5 | Operating in production | **Complete** | [EN](en/part-1-ai-applications/05-operating-in-production.md) · [中文](zh/part-1-ai-applications/05-operating-in-production.md) |
-| 1.6 | Machine learning foundations | **Complete** | [EN](en/part-1-ai-applications/06-machine-learning-foundations.md) · [中文](zh/part-1-ai-applications/06-machine-learning-foundations.md) |
+| 1.1 | LLM foundations | **Complete** | [EN](en/part-1-ai-applications/01-llm-foundations.md) · [中文](zh/part-1-ai-applications/01-大语言模型基础.md) |
+| 1.2 | Grounding models with data | **Complete** | [EN](en/part-1-ai-applications/02-grounding-models-with-data.md) · [中文](zh/part-1-ai-applications/02-用数据锚定模型.md) |
+| 1.3 | Building agentic systems | **Complete** | [EN](en/part-1-ai-applications/03-building-agentic-systems.md) · [中文](zh/part-1-ai-applications/03-构建Agentic系统.md) |
+| 1.4 | Evaluation-driven development | **Complete** | [EN](en/part-1-ai-applications/04-evaluation-driven-development.md) · [中文](zh/part-1-ai-applications/04-评估驱动开发.md) |
+| 1.5 | Operating in production | **Complete** | [EN](en/part-1-ai-applications/05-operating-in-production.md) · [中文](zh/part-1-ai-applications/05-生产环境运维.md) |
+| 1.6 | Machine learning foundations | **Complete** | [EN](en/part-1-ai-applications/06-machine-learning-foundations.md) · [中文](zh/part-1-ai-applications/06-机器学习基础.md) |
 
 **Part 1 complete — all 6 sub-skills done, in both languages.**
 
