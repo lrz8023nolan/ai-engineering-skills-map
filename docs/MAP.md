@@ -69,8 +69,10 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 |---|---|---|---|
 | 4.1 | Driving the build loop | **Complete** | [EN](en/part-4-shaping-the-build/01-driving-the-build-loop.md) · [中文](zh/part-4-shaping-the-build/01-驱动构建循环.md) |
 | 4.2 | Making product decisions | **Complete** | [EN](en/part-4-shaping-the-build/02-making-product-decisions.md) · [中文](zh/part-4-shaping-the-build/02-产品决策.md) |
-| 4.3 | Communicating and leading | Planned | — |
-| 4.4 | High-agency ownership | Planned | — |
+| 4.3 | Communicating and leading | **Complete** | [EN](en/part-4-shaping-the-build/03-communicating-and-leading.md) · [中文](zh/part-4-shaping-the-build/03-沟通与领导.md) |
+| 4.4 | High-agency ownership | **Complete** | [EN](en/part-4-shaping-the-build/04-high-agency-ownership.md) · [中文](zh/part-4-shaping-the-build/04-高主动性担当.md) |
+
+**Part 4 complete — all 4 sub-skills done, in both languages. All 20 sub-skills are now complete.**
 
 **Total: 4 parts, 20 sub-skills.**
 

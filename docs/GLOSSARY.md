@@ -495,6 +495,22 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | commitment | 承诺 | 中文。用户访谈语境下特指用户愿意付出的实际代价：钱、时间、引荐。不译作「投入」 |
 | intent-based outcome specification | 基于意图的结果指定 | 中文。首次出现可括注英文 |
 | discoverability | 可发现性 | 中文。不用说明书也能看出能做什么 |
+| cross-functional | 跨职能 | 中文 |
+| feasibility | 可行性 | 中文 |
+| one-way decision | 单向决定 | 中文。指不可回退的决策，与可回退动作相对 |
+| pre-registered | 预注册 | 中文。指实验方案在采集数据前已公开登记 |
+| preprint | 预印本 | 中文。指未经同行评议的公开稿件 |
+| EEG (electroencephalography) | 脑电 | 中文。首次出现给英文全称 |
+| familiarity effect | 熟悉效应 | 中文。指重复接触同一任务本身带来的表现提升 |
+| jagged technological frontier | 锯齿前沿 | 中文。首次出现可括注英文 jagged technological frontier |
+| cognitive debt | 认知负债 | 中文。首次出现可括注英文 cognitive debt |
+| skill compression | 技能压缩 | 中文。指用 AI 之后，弱者的提升幅度大于强者，个体间差距收窄 |
+| grit | 坚毅 | 中文。首次出现可括注 grit |
+| perseverance of effort | 持续努力 | 中文。坚毅的两个面向之一 |
+| consistency of interest | 兴趣一致 | 中文。坚毅的两个面向之一 |
+| proactive personality | 主动型人格 | 中文 |
+| voice | 提出意见 | 中文。组织行为语境下特指向上表达建议与顾虑的行为，不译作「发言」 |
+| percent of plan delivered | 计划完成百分比 | 中文。指以「按计划交付了多少」为衡量标准，Kohavi 批评的偏差来源 |
 | affordance / signifier | — | **保留英文**。前者是物体实际允许的动作，后者是可感知的行动线索；中文译名（可供性／示能性、意符／指示符）尚未统一 |
 
 ---
