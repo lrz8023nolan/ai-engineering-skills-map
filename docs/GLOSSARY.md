@@ -482,6 +482,20 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | agency | 主动性 | 中文。首次出现可括注英文；本仓库不译作「主体性」 |
 | high-agency ownership | 高主动性担当 | 中文 |
 | PM (product manager) | 产品经理 | 中文 |
+| small batches | 小批量 | 中文。指把改动拆小、频繁发布，以降低一次调整要放弃的量 |
+| enterprise-grade | 企业级 | 中文 |
+| product spec | 产品规格 | 中文。首次出现可简写为「规格」 |
+| OEC (overall evaluation criterion) | 总体评估标准 | 中文。首次出现给全称，其后用 OEC |
+| Twyman's law | 特威曼定律 | 中文。首次出现可括注 Twyman's law |
+| sample ratio mismatch (SRM) | 样本比例失衡 | 中文。首次出现给全称与英文缩写 |
+| guardrail metric | 护栏指标 | 中文。指用来盯「有没有伤到别的指标」的指标 |
+| novelty effect | 新奇效应 | 中文。指新东西的初期提升会衰减 |
+| false positive | 假阳性 | 中文 |
+| fluff | 空话 | 中文。仅用于用户访谈语境：泛化断言、未来时承诺、假设语气三类无效回答 |
+| commitment | 承诺 | 中文。用户访谈语境下特指用户愿意付出的实际代价：钱、时间、引荐。不译作「投入」 |
+| intent-based outcome specification | 基于意图的结果指定 | 中文。首次出现可括注英文 |
+| discoverability | 可发现性 | 中文。不用说明书也能看出能做什么 |
+| affordance / signifier | — | **保留英文**。前者是物体实际允许的动作，后者是可感知的行动线索；中文译名（可供性／示能性、意符／指示符）尚未统一 |
 
 ---
 
@@ -525,3 +539,4 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `go-to-market` | 缩略 GTM 已通用 |
 | `token` | 中文技术语境直接用英文 |
 | `AGENTS.md` / `CLAUDE.md` / `SKILL.md` | 文件名与约定的入口文件名 |
+| `affordance` / `signifier` | 中文译名（可供性／示能性、意符／指示符）尚未统一 |

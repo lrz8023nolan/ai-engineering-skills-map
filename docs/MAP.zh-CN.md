@@ -69,8 +69,8 @@
 
 | # | 子技能 | 状态 | 手册 |
 |---|---|---|---|
-| 4.1 | 驱动构建循环（Driving the build loop） | 待推进 | — |
-| 4.2 | 产品决策（Making product decisions） | 待推进 | — |
+| 4.1 | 驱动构建循环（Driving the build loop） | **已完成** | [中文](zh/part-4-shaping-the-build/01-驱动构建循环.md) · [EN](en/part-4-shaping-the-build/01-driving-the-build-loop.md) |
+| 4.2 | 产品决策（Making product decisions） | **已完成** | [中文](zh/part-4-shaping-the-build/02-产品决策.md) · [EN](en/part-4-shaping-the-build/02-making-product-decisions.md) |
 | 4.3 | 沟通与领导（Communicating and leading） | 待推进 | — |
 | 4.4 | 高主动性担当（High-agency ownership） | 待推进 | — |
 
