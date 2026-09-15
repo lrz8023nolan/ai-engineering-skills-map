@@ -123,7 +123,7 @@ Assumptions that beginners take for granted and that are all false in a distribu
 | Transport cost is zero | Cross-region traffic is a real bill |
 | The network is homogeneous | Different datacentres, clouds and protocols |
 
-(This set originates with Waldo et al., *A Note on Distributed Computing*, 1994, and subsequent elaborations.)
+(This set originates with [Waldo et al., *A Note on Distributed Computing*, 1994](https://link.springer.com/content/pdf/10.1007/3-540-62852-5_6.pdf), and subsequent elaborations.)
 
 ## 4. Going deeper
 
@@ -131,7 +131,7 @@ Assumptions that beginners take for granted and that are all false in a distribu
 
 This is the most important paper ever written on software architecture, and it fits in five pages:
 
-> Parnas, *On the Criteria To Be Used in Decomposing Systems into Modules*, Communications of the ACM 15(12), 1972
+> [Parnas, *On the Criteria To Be Used in Decomposing Systems into Modules*, Communications of the ACM 15(12), 1972](https://dl.acm.org/doi/epdf/10.1145/361598.361623)
 
 He ran a deceptively ordinary demonstration: take a KWIC index generator (input some lines, output every circular shift, sorted) and **decompose it two different ways**.
 
@@ -159,7 +159,7 @@ Parnas's own words:
 
 > "organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations."
 
-> Conway, *How Do Committees Invent?*, Datamation 14(4), 1968
+> [Conway, *How Do Committees Invent?*, Datamation 14(4), 1968](https://melconway.com/Home/pdf/committees.pdf)
 
 The implication: **architecture is not only a technical decision, it is also an organisational one.** If two modules must collaborate closely but the teams owning them barely talk, then no matter what the architecture diagram says, the interface between them will degrade into "throw it over the wall".
 
@@ -259,4 +259,4 @@ The value is not in the format but in that last field — it turns Ng's "moving 
 | Tier 2 — practitioner | Lewis & Fowler, *Microservices*, 2014 | [martinfowler.com](https://martinfowler.com/articles/microservices.html) |
 | Tier 2 — practitioner | Fowler, *MonolithFirst* | [martinfowler.com](https://martinfowler.com/bliki/MonolithFirst.html) |
 
-> Architecture Decision Records originate with Michael Nygard's 2011 article *Documenting Architecture Decisions*; cited here at second hand.
+> Architecture Decision Records originate with Michael Nygard's 2011 article [*Documenting Architecture Decisions*](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).

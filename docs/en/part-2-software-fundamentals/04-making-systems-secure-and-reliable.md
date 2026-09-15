@@ -119,7 +119,7 @@ Ng mentions using AI to scan code for vulnerabilities, check dependencies for su
 
 This is an empirically established conclusion that should change what you decide to test:
 
-> Yuan et al., *Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems*, OSDI 2014
+> [Yuan et al., *Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems*, OSDI 2014](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/yuan)
 
 The authors analysed severe production failures across several widely used distributed storage systems (Cassandra, HBase, HDFS, MapReduce, Redis, ZooKeeper). Two findings stand out:
 
@@ -165,7 +165,7 @@ So designing around failure has to be **a deliberate act performed during develo
 
 "Finding problems earlier is cheaper" is common sense; the hard part is **knowing what to do specifically, and how far to go**. That ground is well covered; there is no need to invent your own programme.
 
-> NIST, *Secure Software Development Framework (SSDF)*, SP 800-218
+> [NIST, *Secure Software Development Framework (SSDF)*, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final)
 
 It organises security work into four practice groups:
 
@@ -217,7 +217,7 @@ Mentioned above; here is how it is done. The core idea is to **cut the system in
 
 The early theoretical statement of this idea:
 
-> Fox & Brewer, *Harvest, Yield, and Scalable Tolerant Systems*, HotOS 1999
+> [Fox & Brewer, *Harvest, Yield, and Scalable Tolerant Systems*, HotOS 1999](https://ieeexplore.ieee.org/document/798396)
 
 That paper proposes describing a system's degradation along two axes — **harvest** (the fraction of the data that should be returned which actually is) and **yield** (the fraction of requests answered) — **rather than as a binary up/down**. This is the quantitative basis of graceful degradation: a system can lose harvest while holding yield, meaning "the answer is incomplete, but we did not refuse service".
 
@@ -261,4 +261,4 @@ Back to Ng's caution. The boundary is cleanly stated by one criterion:
 | Tier 1 — official | Google, *Site Reliability Engineering* (free online) — blameless postmortems, change management | [sre.google](https://sre.google/sre-book/table-of-contents/) |
 | Tier 2 — practitioner | Principles of Chaos Engineering | [principlesofchaos.org](https://principlesofchaos.org/) |
 
-> Of the two mainstream SBOM formats, SPDX is now ISO/IEC 5962:2021 and CycloneDX is maintained by OWASP; both standard numbers are cited here at second hand.
+> Of the two mainstream SBOM formats, SPDX is now [ISO/IEC 5962:2021]((https://www.iso.org/standard/81870.html)) and [CycloneDX](https://cyclonedx.org/) is maintained by OWASP.

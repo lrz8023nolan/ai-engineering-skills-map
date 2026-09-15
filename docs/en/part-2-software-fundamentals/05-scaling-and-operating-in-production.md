@@ -119,7 +119,7 @@ The set of practices Ng names is often dismissed as process trivia, but these de
 
 This is the most counter-intuitive finding in the manual, and it rests on large-scale empirical evidence.
 
-> Forsgren, Humble & Kim, *Accelerate: The Science of Lean Software and DevOps*, 2018 (based on years of DORA research)
+> [Forsgren, Humble & Kim, *Accelerate: The Science of Lean Software and DevOps*, 2018](https://dl.acm.org/doi/10.5555/3235404) (based on years of DORA research)
 
 DORA measures delivery performance with four metrics:
 
@@ -156,7 +156,7 @@ The mechanism is not mysterious:
 
 A common default assumption is that higher reliability is always better. But 100% availability means **no change may carry any risk**, which means no change at all — unacceptable commercially.
 
-> Google, *Site Reliability Engineering* (free online)
+> [Google, *Site Reliability Engineering*](https://sre.google/)
 
 SRE's answer is the **error budget**, which turns the conflict into a quantifiable decision:
 
@@ -274,4 +274,4 @@ Dependencies occupy a peculiar position in software: **they are the only thing t
 | Tier 2 — practitioner | *The Twelve-Factor App* — config separated from code, stateless processes, logs as event streams | [12factor.net](https://12factor.net/) |
 | Tier 2 — practitioner | AWS Builders' Library — engineering detail on backoff and jitter, timeouts, retries, circuit breaking | [aws.amazon.com](https://aws.amazon.com/builders-library/) |
 
-> The figures and cases in this manual come from DORA's public research and *Accelerate* (2018). Benchmarks are updated in each annual report — check the latest edition when citing them. The toil ceiling and error-budget arithmetic come from Google's SRE book.
+> The figures and cases in this manual come from [DORA's public research]((https://dora.dev/research/2025/dora-report/)) and *Accelerate* (2018), benchmarks are updated in each annual report. The toil ceiling and error-budget arithmetic come from Google's SRE book.
