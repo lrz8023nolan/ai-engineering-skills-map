@@ -145,7 +145,7 @@ A user study with 47 participants across five security-relevant tasks in Python,
 Source: [Perry, Srivastava, Kumar & Boneh, *Do Users Write More Insecure Code with AI Assistants?*, ACM CCS 2023](https://arxiv.org/abs/2211.03622)
 An earlier study built 89 scenarios mapped to MITRE's top weaknesses (CWEs) and generated 1,689 programs with GitHub Copilot; roughly **40%** were assessed as vulnerable (about 50% for C, 39% for Python).
 
-Source: Pearce et al., *Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions*, IEEE S&P 2022, later in *Communications of the ACM* 68(2), 2025
+Source: Pearce et al., [*Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions*, IEEE S&P 2022, later in *Communications of the ACM* 68(2), 2025](https://dl.acm.org/doi/full/10.1145/3610721)
 
 **The second finding is more important than the first.** The first says the risk exists; the second says **it survives review** — because people systematically rate code they just participated in generating too highly, and fluent, tidy code is the strongest possible signal of "looks right." It also explains why human review is a particularly unreliable gate for this class of code: **the most likely place for a vulnerability to hide is the version that looks most finished.**
 
