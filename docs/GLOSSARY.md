@@ -420,6 +420,32 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | retrospective | 复盘 | 中文 |
 | context window management | 上下文窗口管理 | 中文 |
 | token | token | **保留英文** |
+| planning artefact | 规划产物 | 中文。指 spec、执行计划一类需交付的规划成果 |
+| execution plan | 执行计划 | 中文 |
+| verifiable step | 可验证的步骤 | 中文 |
+| autonomy level | 自主性档位 | 中文 |
+| bounded delegation | 委托一整块 | 中文。指「给一段明确任务、跑完再看」这一档 |
+| human ownership | 人类所有权 | 中文。指关键工作的决策权留给人，对应原文 retain human ownership over critical work |
+| context compaction | 上下文压缩 | 中文。与 context compression 同义；compaction 特指会话内自动裁剪 |
+| permission prompt | 权限提示 | 中文 |
+| approval fatigue | 批准疲劳 | 中文。首次出现可括注英文 |
+| filesystem isolation | 文件系统隔离 | 中文 |
+| network isolation | 网络隔离 | 中文 |
+| egress | 出口 | 中文。指出站流量；`egress allowlist` 写「出口白名单」 |
+| allowlist / denylist | 白名单 / 黑名单 | 中文。不译作「允许列表」，中文技术写作中「白名单」已通用 |
+| lethal trifecta | 致命三要素 | 中文。首次出现括注英文 lethal trifecta——该提法由 Simon Willison 提出 |
+| functional verification | 功能验证 | 中文 |
+| behavioural verification | 行为验证 | 中文 |
+| code behaviour | 代码行为 | 中文。**审阅的主要对象**，区别于审阅代码本身 |
+| user flow | 用户流程 | 中文 |
+| agentic code review | Agentic 代码评审 | 混合 |
+| diff | diff | **保留英文**。代码改动的差异视图，译「差异」在句中不直观 |
+| time horizon | 任务时长视野 | 中文。首次出现可括注英文；指 AI 能完成的任务换算成人类耗时后的长度 |
+| 50% / 80% time horizon | 50% / 80% 时间视野 | 混合 |
+| reward hacking | 奖励欺骗 | 中文。首次出现括注英文 reward hacking；业内译名尚未统一，本仓库统一用「奖励欺骗」 |
+| obfuscated reward hacking | 混淆式奖励欺骗 | 中文 |
+| monitorability tax | 可监控性税 | 中文。首次出现括注英文 |
+| chain of thought (CoT) | 思维链 | 中文。首次出现给全称，其后用 CoT |
 
 ---
 
@@ -482,6 +508,7 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `toil` | 中文译名（苦役／杂务）尚未达成共识 |
 | `blast radius` | 中文无简洁对应 |
 | `spec` | 高频词，「规格说明」在工程语境另有特指 |
+| `diff` | 代码改动的差异视图，译作「差异」在句中使用不直观 |
 | `go-to-market` | 缩略 GTM 已通用 |
 | `token` | 中文技术语境直接用英文 |
 | `AGENTS.md` / `CLAUDE.md` | 文件名 |
