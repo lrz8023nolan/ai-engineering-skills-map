@@ -72,13 +72,14 @@ Every manual has exactly these six sections, in this order.
 |---|---|---|
 | **1. Primary** | Peer-reviewed papers; official vendor or standards documentation; the author's own writing | All factual claims that matter |
 | **2. Practitioner** | Write-ups by named engineers grounded in production experience | Method, workflow, trade-offs |
-| **3. Secondary** | Surveys, course material, summary blog posts | Orientation only — verify against tier 1 before stating as fact |
+| **3. Secondary** | Surveys, course material, summary blog posts | Orientation only — if cited, label it as relayed |
 
 ### 5.2 Citation rules
 - Every non-obvious factual claim carries a source.
 - **Quoting the source letter is mandatory.** Every manual must contain at least one direct quotation from its source letter — in the original English, with a link — regardless of how the rest of the manual is sourced. This is the one sourcing requirement that is never relaxed.
-- Cite inline as a Markdown link, and list the source again in §4.6.
-- Never cite a source you have not read. Never cite a secondary source for a claim it is itself only summarising.
+- Cite inline as a Markdown link, and list the source again in §4.6. **One link per citation** — fold identifiers such as an arXiv number into the link text rather than appending a second link.
+- Use sources you have read. Where a claim can only be established from secondary material, cite it with a short factual label (`relayed`), and never treat a secondary source as evidence for the claim it is itself only summarising.
+- **Keep the label short.** Do not write "this manual did not read the original", "verify against primary sources", or similar self-commentary into the body. The type column in §4.6 already carries that information.
 - Where a number is quoted (an accuracy figure, an agreement rate), give the source that measured it.
 - There is no fixed minimum number of tier-1 sources. Research-led sub-skills should carry several; practitioner-led sub-skills (much of Part 4) may legitimately rest mainly on tier-2 material, provided it is labelled as such.
 

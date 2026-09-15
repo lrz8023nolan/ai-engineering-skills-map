@@ -191,4 +191,4 @@ Gao et al.'s survey (*[Retrieval-Augmented Generation for Large Language Models:
 | Tier 1 — paper | Yan et al., *Corrective Retrieval Augmented Generation* (CRAG), 2024 | [arXiv:2401.15884](https://arxiv.org/abs/2401.15884) |
 | Tier 1 — paper | Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024 | [arXiv:2307.03172](https://arxiv.org/abs/2307.03172) |
 | Tier 1 — survey | Gao et al., *Retrieval-Augmented Generation for Large Language Models: A Survey*, 2024 | [arXiv:2312.10997](https://arxiv.org/abs/2312.10997) |
-| Tier 2 | Robertson & Zaragoza, *The Probabilistic Relevance Framework: BM25 and Beyond*, 2009 (cited at second hand; original not consulted) | — |
+| Tier 2 | Robertson & Zaragoza, *The Probabilistic Relevance Framework: BM25 and Beyond*, 2009 (relayed) | — |

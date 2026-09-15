@@ -218,4 +218,4 @@ The methods transfer — 1.4's grader taxonomy is a toolbox for behavioural veri
 | Tier 1 · Paper | Sandoval et al., *Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants*, USENIX Security 2023, pp. 2205–2222 | [usenix.org](https://www.usenix.org/conference/usenixsecurity23/presentation/sandoval) |
 | Tier 1 · Research org (relayed) | METR, *Recent Frontier Models Are Reward Hacking*, 2025-06-05 | [metr.org](https://metr.org/blog/2025-06-05-recent-reward-hacking/) |
 
-> **Sourcing note:** In §4.3, the 40% figure and the per-language breakdown from Pearce et al. (about 50% for C, 39% for Python) are relayed from a research-institution report and several independent write-ups; this manual did not verify them against the paper itself. All other figures are taken from the papers' own abstracts or bodies.
+> **Sourcing note:** In §4.3, the 40% figure and the per-language breakdown from Pearce et al. (about 50% for C, 39% for Python) are relayed. All other figures are taken from the papers' own abstracts or bodies.
