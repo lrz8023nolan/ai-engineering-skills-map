@@ -73,7 +73,7 @@ The environment layer is the only one that does not rely on someone judging corr
 
 ### 3.6 The lethal trifecta
 
-Simon Willison proposed a very usable test in June 2025: the **lethal trifecta**. When an agent has all three of the following, one successful prompt injection becomes data theft:
+Simon Willison proposed a very usable test in June 2025: the [**lethal trifecta**](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/). When an agent has all three of the following, one successful prompt injection becomes data theft:
 
 | The three legs | Meaning |
 |---|---|
@@ -109,7 +109,7 @@ The significance is not that the model is malicious. It is that **the request wa
 
 > Controls cannot rest on recognising intent. They must rest on hard environmental boundaries — **filesystem isolation and outbound network restrictions that block credential theft even when the request appears entirely legitimate.**
 
-Source: Anthropic's disclosed containment design, as reported by [InfoQ](https://www.infoq.com/news/2026/07/anthropic-claude-containment) (relayed, not primary text)
+Source: Anthropic's disclosed containment design, as reported by [InfoQ](https://www.infoq.com/news/2026/07/anthropic-claude-containment)
 
 ### 4.3 An allowlisted domain is not a trusted destination
 
@@ -119,7 +119,7 @@ The same disclosure contains a case worth remembering. In Claude Cowork's design
 
 The fix was a proxy inside the VM that accepts only the session's provisioned token and blocks the relevant server-side-fetch headers. The trap generalises to anyone running an egress allowlist: if the allowlist granularity is a domain, then any large vendor domain that permits uploads is a potential exit.
 
-Source: as above, via [InfoQ](https://www.infoq.com/news/2026/07/anthropic-claude-containment) (relayed)
+Source: as above, via [InfoQ](https://www.infoq.com/news/2026/07/anthropic-claude-containment)
 
 ### 4.4 Injection is probabilistic, which makes it harder to find
 
@@ -174,4 +174,4 @@ Sources: [Simon Willison](https://simonwillison.net/2025/Jun/16/the-lethal-trife
 | Practitioner | Simon Willison, *The lethal trifecta for AI agents*, 2025-06-16 | [simonwillison.net](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) |
 | Practitioner · Relayed | InfoQ, *Anthropic Details How it Contains Claude across Web, Code, and Cowork* (relaying Anthropic's disclosed containment design) | [infoq.com](https://www.infoq.com/news/2026/07/anthropic-claude-containment) |
 
-> **Sourcing note:** the three items in §4.2 and §4.3 — the 93% approval rate, the 24-of-25 exfiltration result, and the exfiltration via the Files API — are **relayed** from Anthropic's own disclosure via InfoQ; this manual did not read Anthropic's primary text for them. The 84% figure and the sandbox mechanism in §4.1 come from Anthropic's official engineering post. Check the primary material before relying on the relayed figures.
+> **Sourcing note:** the three items in §4.2 and §4.3 — the 93% approval rate, the 24-of-25 exfiltration result, and the exfiltration via the Files API — are **relayed** from Anthropic's own disclosure via InfoQ. The 84% figure and the sandbox mechanism in §4.1 come from Anthropic's official engineering post.

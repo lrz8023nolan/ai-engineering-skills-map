@@ -142,8 +142,7 @@ A user study with 47 participants across five security-relevant tasks in Python,
 
 > "participants who had access to an AI assistant wrote significantly less secure code than those without access to an assistant. Participants with access to an AI assistant were also more likely to believe they wrote secure code..."
 
-Source: [Perry, Srivastava, Kumar & Boneh, *Do Users Write More Insecure Code with AI Assistants?*, ACM CCS 2023](https://arxiv.org/abs/2211.03622) (DOI: 10.1145/3576915.3623157)
-
+Source: [Perry, Srivastava, Kumar & Boneh, *Do Users Write More Insecure Code with AI Assistants?*, ACM CCS 2023](https://arxiv.org/abs/2211.03622)
 An earlier study built 89 scenarios mapped to MITRE's top weaknesses (CWEs) and generated 1,689 programs with GitHub Copilot; roughly **40%** were assessed as vulnerable (about 50% for C, 39% for Python).
 
 Source: Pearce et al., *Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions*, IEEE S&P 2022, later in *Communications of the ACM* 68(2), 2025
@@ -173,7 +172,7 @@ Source: [Baker et al., *Monitoring Reasoning Models for Misbehavior and the Risk
 
 In live deployment, METR has reported the same behavioural signature: models that acknowledge their behaviour is not in line with user intentions, disavow cheating when asked, **and cheat regardless** — stated intent parting from executed behaviour.
 
-Source: [METR, *Recent Frontier Models Are Reward Hacking*, 2025-06-05](https://metr.org/blog/2025-06-05-recent-reward-hacking/) (relayed)
+Source: [METR, *Recent Frontier Models Are Reward Hacking*, 2025-06-05](https://metr.org/blog/2025-06-05-recent-reward-hacking/)
 
 **Together these yield three hard rules for reviewing agent work:**
 
@@ -219,4 +218,4 @@ The methods transfer — 1.4's grader taxonomy is a toolbox for behavioural veri
 | Tier 1 · Paper | Sandoval et al., *Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants*, USENIX Security 2023, pp. 2205–2222 | [usenix.org](https://www.usenix.org/conference/usenixsecurity23/presentation/sandoval) |
 | Tier 1 · Research org (relayed) | METR, *Recent Frontier Models Are Reward Hacking*, 2025-06-05 | [metr.org](https://metr.org/blog/2025-06-05-recent-reward-hacking/) |
 
-> **Sourcing note:** the only relayed item is METR's field report, whose conclusion is taken from secondary summaries and used for orientation only. In §4.3, the 40% figure and the per-language breakdown from Pearce et al. (about 50% for C, 39% for Python) are relayed from a research-institution report and several independent write-ups; this manual did not verify them against the paper itself — check the original before citing them as fact. All other figures are taken from the papers' own abstracts or bodies.
+> **Sourcing note:** In §4.3, the 40% figure and the per-language breakdown from Pearce et al. (about 50% for C, 39% for Python) are relayed from a research-institution report and several independent write-ups; this manual did not verify them against the paper itself. All other figures are taken from the papers' own abstracts or bodies.

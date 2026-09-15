@@ -101,7 +101,7 @@ Where the time went was also measured. Analysing over 140 hours of screen record
 
 Two more numbers from the same study: these developers **accepted AI-generated code without modification less than 44% of the time**, and in the AI-assisted half of the study **about 9% of total task time went to reviewing the AI's output**.
 
-Source: [METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025](https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study.pdf) ([arXiv:2507.09089](https://arxiv.org/abs/2507.09089))
+Source: [METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025, arXiv:2507.09089](https://arxiv.org/abs/2507.09089)
 
 ### 4.2 Why "faster" and "feels faster" come apart
 
@@ -126,7 +126,7 @@ The second is the most engineering-relevant and least quoted. It means: if you w
 
 METR later published an updated dataset (Time Horizon 1.1), growing the task suite from 170 to 228 tasks and fitting a shorter doubling time: about 131 days after 2023, tightening to roughly 89 days for 2024 onward. In the same version, Claude Opus 4.5's 50% time horizon is around 4 hours 49 minutes. METR also warns that, **with the current task suite, measurements above 16 hours are unreliable** — the suite is approaching saturation at the high end.
 
-Source: [METR, *Measuring AI Ability to Complete Long Tasks*, 2025](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) ([arXiv:2503.14499](https://arxiv.org/abs/2503.14499), NeurIPS 2025), [Time Horizons tracking page](https://metr.org/time-horizons)
+Source: [METR, *Measuring AI Ability to Complete Long Tasks*, 2025, arXiv:2503.14499](https://arxiv.org/abs/2503.14499), [Time Horizons tracking page](https://metr.org/time-horizons)
 
 ### 4.4 Ng's own caution about long autonomous runs
 
@@ -165,4 +165,4 @@ That is why planning, and the interrogation of key assumptions in the plan, carr
 | Tier 1 · Research org | METR, *Measuring AI Ability to Complete Long Software Tasks* (project page) | [metr.org](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) |
 | Tier 1 · Research org | METR, *Time Horizons* (continuously updated tracker, incl. Time Horizon 1.1) | [metr.org/time-horizons](https://metr.org/time-horizons) |
 
-> **A note on sourcing:** the methods and conclusions of the two METR studies are taken from the papers themselves (abstract and body), and the figures 19% slower, the perception gap, under 44%, and about 9% review time come from the papers' public write-ups. The Time Horizon 1.1 figures come from METR's official tracking page rather than the original paper; treat that page as authoritative for them.
+> **A note on sourcing:** the methods and conclusions of the two METR studies are taken from the [papers](https://arxiv.org/abs/2507.09089) themselves (abstract and body), and the figures 19% slower, the perception gap, under 44%, and about 9% review time come from the papers' public write-ups. The Time Horizon 1.1 figures come from METR's official tracking page rather than the original paper.

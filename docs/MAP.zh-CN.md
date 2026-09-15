@@ -60,8 +60,10 @@
 | 3.1 | 主导工作流（Directing the workflow） | **已完成** | [中文](zh/part-3-coding-agents/01-主导工作流.md) · [EN](en/part-3-coding-agents/01-directing-the-workflow.md) |
 | 3.2 | 赋予 Agent 自主性（Enabling agent autonomy） | **已完成** | [中文](zh/part-3-coding-agents/02-赋予Agent自主性.md) · [EN](en/part-3-coding-agents/02-enabling-agent-autonomy.md) |
 | 3.3 | 审阅产出（Reviewing the work） | **已完成** | [中文](zh/part-3-coding-agents/03-审阅产出.md) · [EN](en/part-3-coding-agents/03-reviewing-the-work.md) |
-| 3.4 | 定制 Agent 与环境（Customizing the agent and its environment） | 待推进 | — |
-| 3.5 | 编程 Agent 原理（Coding agent foundations） | 待推进 | — |
+| 3.4 | 定制 Agent 与环境（Customizing the agent and its environment） | **已完成** | [中文](zh/part-3-coding-agents/04-定制Agent与环境.md) · [EN](en/part-3-coding-agents/04-customizing-the-agent-and-its-environment.md) |
+| 3.5 | 编程 Agent 原理（Coding agent foundations） | **已完成** | [中文](zh/part-3-coding-agents/05-编程Agent原理.md) · [EN](en/part-3-coding-agents/05-coding-agent-foundations.md) |
+
+**Part 3 已完成——5 个子技能全部完成，中英双语齐备。**
 
 ## Part 4 — 塑造构建
 

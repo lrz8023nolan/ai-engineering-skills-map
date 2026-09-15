@@ -58,8 +58,10 @@ The map was produced by analysing over 10,000 job postings, carrying out dozens 
 | 3.1 | Directing the workflow | **Complete** | [EN](en/part-3-coding-agents/01-directing-the-workflow.md) · [中文](zh/part-3-coding-agents/01-主导工作流.md) |
 | 3.2 | Enabling agent autonomy | **Complete** | [EN](en/part-3-coding-agents/02-enabling-agent-autonomy.md) · [中文](zh/part-3-coding-agents/02-赋予Agent自主性.md) |
 | 3.3 | Reviewing the work | **Complete** | [EN](en/part-3-coding-agents/03-reviewing-the-work.md) · [中文](zh/part-3-coding-agents/03-审阅产出.md) |
-| 3.4 | Customizing the agent and its environment | Planned | — |
-| 3.5 | Coding agent foundations | Planned | — |
+| 3.4 | Customizing the agent and its environment | **Complete** | [EN](en/part-3-coding-agents/04-customizing-the-agent-and-its-environment.md) · [中文](zh/part-3-coding-agents/04-定制Agent与环境.md) |
+| 3.5 | Coding agent foundations | **Complete** | [EN](en/part-3-coding-agents/05-coding-agent-foundations.md) · [中文](zh/part-3-coding-agents/05-编程Agent原理.md) |
+
+**Part 3 complete — all 5 sub-skills done, in both languages.**
 
 ## Part 4 — Shaping the build
 

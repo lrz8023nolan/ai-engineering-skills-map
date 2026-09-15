@@ -446,6 +446,19 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | obfuscated reward hacking | 混淆式奖励欺骗 | 中文 |
 | monitorability tax | 可监控性税 | 中文。首次出现括注英文 |
 | chain of thought (CoT) | 思维链 | 中文。首次出现给全称，其后用 CoT |
+| progressive disclosure | 渐进式披露 | 中文。指技能分元数据／正文／附加资源三层按需加载 |
+| MCP server | MCP server | **混合**。中文写作中直接用「MCP server」，不译作「MCP 服务器」 |
+| tool poisoning attack | 工具投毒攻击 | 中文。首次出现可括注英文 tool poisoning attack |
+| rug pull | 地毯式替换 | 中文。指服务器在通过审查后静默改写工具定义 |
+| cross-server escalation | 跨服务器升级 | 中文。指一个恶意服务器影响模型如何使用其他服务器 |
+| feature list | 功能清单 | 中文。指跨会话传递进度的结构化产物 |
+| progress log | 进度日志 | 中文 |
+| bootstrap script | 启动脚本 | 中文 |
+| prune / pruning | 剪枝 | 中文。指移除不再需要的技能、插件、MCP server |
+| agent-generated debt | Agent 生成的技术债 | 中文 |
+| context reset | 上下文重置 | 中文。与压缩相对：清空窗口后由新 Agent 接续 |
+| context anxiety | 上下文焦虑 | 中文。指模型接近自认为的上下文上限时提前收尾 |
+| self-evaluation bias | 自评偏差 | 中文。指 Agent 评价自己产出时系统性偏乐观 |
 
 ---
 
@@ -511,4 +524,4 @@ Bilingual terminology for this repository. **Authoritative** — if a manual use
 | `diff` | 代码改动的差异视图，译作「差异」在句中使用不直观 |
 | `go-to-market` | 缩略 GTM 已通用 |
 | `token` | 中文技术语境直接用英文 |
-| `AGENTS.md` / `CLAUDE.md` | 文件名 |
+| `AGENTS.md` / `CLAUDE.md` / `SKILL.md` | 文件名与约定的入口文件名 |

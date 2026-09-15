@@ -75,7 +75,7 @@
 
 ### 3.6 致命三要素
 
-Simon Willison 在 2025 年 6 月提出了一个很好用的判据，叫**致命三要素（lethal trifecta）**。一个 Agent 同时具备下面三条时，一次成功的提示注入（prompt injection）就会直接变成数据泄漏：
+Simon Willison 在 2025 年 6 月提出了一个很好用的判据，叫[**致命三要素（lethal trifecta）**](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)。一个 Agent 同时具备下面三条时，一次成功的提示注入（prompt injection）就会直接变成数据泄漏：
 
 | 三只脚 | 意思 |
 |---|---|
@@ -111,7 +111,7 @@ Anthropic 做过一次受控红队测试：用钓鱼邮件让一名员工给 Cla
 
 > 控制手段不能建立在对意图的识别上，只能建立在环境的硬边界上——**文件系统隔离与出站网络限制必须能在请求看起来完全合法的情况下依然阻止凭据被带走。**
 
-出处：Anthropic 披露的容器化设计细节，经 [InfoQ 报道](https://www.infoq.com/news/2026/07/anthropic-claude-containment)（转述，非一手文本）
+出处：Anthropic 披露的容器化设计细节，经 [InfoQ 报道](https://www.infoq.com/news/2026/07/anthropic-claude-containment)
 
 ### 4.3 白名单里的域名不等于可信目的地
 
@@ -121,7 +121,7 @@ Anthropic 做过一次受控红队测试：用钓鱼邮件让一名员工给 Cla
 
 修法是改用沙箱内的代理，只接受该会话被签发的 token，并屏蔽相关的服务端抓取头。这个坑对所有做出口白名单的人成立——白名单的粒度如果是域名，那么任何一个允许上传的大厂域名都是一个潜在的出口。
 
-出处：同上，经 [InfoQ 报道](https://www.infoq.com/news/2026/07/anthropic-claude-containment)（转述）
+出处：同上，经 [InfoQ 报道](https://www.infoq.com/news/2026/07/anthropic-claude-containment)
 
 ### 4.4 注入是概率性的，这让它更难被发现
 
@@ -178,4 +178,4 @@ METR 测量前沿模型 agent 的**任务时长视野**时发现：**80% 成功�
 | 实践者 | Simon Willison, *The lethal trifecta for AI agents*, 2025-06-16 | [simonwillison.net](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) |
 | 实践者 · 转述 | InfoQ, *Anthropic Details How it Contains Claude across Web, Code, and Cowork*（转述 Anthropic 披露的容器化设计） | [infoq.com](https://www.infoq.com/news/2026/07/anthropic-claude-containment) |
 
-> **来源说明：** §4.2 与 §4.3 中「93% 批准率」「25 次中 24 次完成外泄」「通过 Files API 外泄」这三项均为对 Anthropic 自身披露的**转述**（经 InfoQ 报道），本手册未读到 Anthropic 的原始文本。§4.1 的 84% 与沙箱机制来自 Anthropic 官方工程文章原文。使用这些数字前建议回查一手材料。
+> **来源说明：** §4.2 与 §4.3 中「93% 批准率」「25 次中 24 次完成外泄」「通过 Files API 外泄」这三项均为对 Anthropic 自身披露的**转述**（经 InfoQ 报道）。§4.1 的 84% 与沙箱机制来自 Anthropic 官方工程文章原文。
